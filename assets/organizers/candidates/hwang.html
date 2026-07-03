@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- TemplateBeginEditable name="doctitle" -->
+
+<!-- ************************************************************************* -->
+<!-- ***  Scroll down to line 393 to find the start of your editable info  *** -->
+<!-- ***  (yes, that's a long way down there, sorry for the inconvenience) *** -->
+<!-- ************************************************************************* -->
+
+<title>
+Jenq-Neng Hwang | UW Department of Electrical &amp; Computer Engineering
+</title>
+		  <!-- TemplateEndEditable -->
+		<meta charset="utf-8">
+            <script src="/wp-cruft/uw-ee-main/js/viewport-units-buggyfill/viewport-units-buggyfill.js"></script>
+            <script>window.viewportUnitsBuggyfill.init();</script>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+		<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+
+<link rel='stylesheet' id='uw-master-css'  href='/wp-cruft/uw-2014/style.css?ver=3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='google-font-open-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C700&#038;ver=3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='uw-style-css'  href='/wp-cruft/uw-ee-main/style.css?ver=3.6' type='text/css' media='all' />
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?ver=1.11.3'></script>
+<script type='text/javascript' src='/wp-cruft/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
+<script type='text/javascript' src='/wp-cruft/wp-includes/js/backbone.min.js?ver=1.2.3'></script>
+<script type='text/javascript' src='/wp-cruft/uw-2014/js/site.js?ver=1.0.3'></script>
+
+
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+		<!--[if lt IE 9]>
+			<script src="/wp-cruft/uw-2014/assets/ie/js/html5shiv.js" type="text/javascript"></script>
+			<script src="/wp-cruft/uw-2014/assets/ie/js/respond.js" type="text/javascript"></script>
+			<link rel='stylesheet' href="/wp-cruft/uw-2014/assets/ie/css/ie.css" type='text/css' media='all' />
+		<![endif]-->
+
+<script type="text/javascript" src="/scripts/jsmail.js"></script>
+<script type="text/javascript" src="/scripts/cookiescripts.js"></script>
+<script type="text/javascript">
+<!--
+
+// Note that, for our internal stuff, we're setting a higher bar: Internet Explorer 10 or above
+var craptastic_browser = false;
+var browser_id = navigator.userAgent;
+if (/MSIE (\d+\.\d+);/.test(browser_id)) {
+	var ieversion=new Number(RegExp.$1);
+	if (ieversion < 10) craptastic_browser = true;
+	}
+
+function runOnLoad()
+	{
+	try {
+		userRunOnLoad();
+		}
+	catch (possible_error_flags) {
+		}
+	// Check for old versions of Internet Explorer
+	if (craptastic_browser) {
+		var warning_div = document.createElement('div');
+		warning_div.innerHTML =
+			'<div style="color: #ff0000; border: solid #ff0000; padding: 5px;">' +
+			'You appear to be using an older version of Internet Explorer (IE). Many UWECE web pages, forms, and scripts ' +
+			'will not work correctly with older versions of IE, or with IE running in Compatibility View. For help ' +
+			'with resolving this problem <a href="/computing/faq/web/ie_compatibility.html">please see this help page</a> ' +
+			'or contact your computer support person.</div>';
+		var first_child = document.getElementById('main_content').firstChild;
+		document.getElementById('main_content').insertBefore(warning_div, first_child);
+		}
+	}
+
+// -->
+</script>
+
+
+<!-- TemplateBeginEditable name="head" -->
+
+<!-- TemplateEndEditable -->
+
+</head>
+
+<body onLoad="runOnLoad()">
+
+	<div id="uwsearcharea" aria-hidden="true" class="uw-search-bar-container"></div>
+
+	<a id="main-content" href="#main_content" class='screen-reader-shortcut'>Skip to main content</a>
+
+	<div id="uw-container">
+
+	<div id="uw-container-inner">
+
+
+	<header class="uw-thinstrip">
+
+
+  <div class="container">
+    <a href="https://www.ece.uw.edu" title="Department of Electrical Engineering Home" class="uw-patch">University of Washington</a>
+    <a href="https://www.ece.uw.edu" title="Department of Electrical Engineering Home" class="uw-wordmark" tabindex='-1' aria-hidden='true'>University of Washington</a>
+  </div>
+  <div class='align-right'>
+      <nav class="uw-thin-strip-nav" role='navigation'>
+          <ul class="uw-thin-links">
+            <!-- <li><a href="https://www.ece.uw.edu/about" title="About Us">About EE</a></li> -->
+            <!-- <li><a href="https://www.ece.uw.edu/blog" title="Blog">Blog</a></li> -->
+            <!-- <li><a href="http://vannevar.ece.uw.edu" title="Internal Pages">Intranet</a></li> -->
+            <li><a href="https://www.ece.uw.edu/engage/donors" title="Give to ECE">Give to ECE</a></li>
+          </ul>
+      </nav>
+      <button class='uw-search' aria-owns='uwsearcharea' aria-controls='uwsearcharea' aria-expanded='false' aria-label='open search area' aria-haspopup='true'>
+<!--[if gt IE 8]><!-->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="19px" height="51px" viewBox="0 0 18.776 51.062" enable-background="new 0 0 18.776 51.062" xml:space="preserve" focusable="false">
+          <g>
+
+              <path fill="#FFFFFF" d="M3.537,7.591C3.537,3.405,6.94,0,11.128,0c4.188,0,7.595,3.406,7.595,7.591
+                c0,4.187-3.406,7.593-7.595,7.593C6.94,15.185,3.537,11.778,3.537,7.591z M5.245,7.591c0,3.246,2.643,5.885,5.884,5.885
+                c3.244,0,5.89-2.64,5.89-5.885c0-3.245-2.646-5.882-5.89-5.882C7.883,1.71,5.245,4.348,5.245,7.591z"/>
+
+              <rect x="2.418" y="11.445" transform="matrix(0.7066 0.7076 -0.7076 0.7066 11.7842 2.0922)" fill="#FFFFFF" width="1.902" height="7.622"/>
+          </g>
+          <path fill="#FFFFFF" d="M3.501,47.864c0.19,0.194,0.443,0.29,0.694,0.29c0.251,0,0.502-0.096,0.695-0.29l5.691-5.691l5.692,5.691
+              c0.192,0.194,0.443,0.29,0.695,0.29c0.25,0,0.503-0.096,0.694-0.29c0.385-0.382,0.385-1.003,0-1.388l-5.692-5.691l5.692-5.692
+              c0.385-0.385,0.385-1.005,0-1.388c-0.383-0.385-1.004-0.385-1.389,0l-5.692,5.691L4.89,33.705c-0.385-0.385-1.006-0.385-1.389,0
+              c-0.385,0.383-0.385,1.003,0,1.388l5.692,5.692l-5.692,5.691C3.116,46.861,3.116,47.482,3.501,47.864z"/>
+          </svg>
+<!--<![endif]-->
+      </button>
+      <button class='uw-quicklinks' aria-haspopup='true' aria-expanded="false" aria-label="Open quick links">Quick Links<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15.63px" height="69.13px" viewBox="0 0 15.63 69.13" enable-background="new 0 0 15.63 69.13" xml:space="preserve" focusable="false"><polygon fill="#FFFFFF" points="12.8,7.776 12.803,7.773 5.424,0 3.766,1.573 9.65,7.776 3.766,13.98 5.424,15.553 12.803,7.78"/><polygon fill="#FFFFFF" points="9.037,61.351 9.036,61.351 14.918,55.15 13.26,53.577 7.459,59.689 1.658,53.577 0,55.15 5.882,61.351 5.882,61.351 5.884,61.353 0,67.557 1.658,69.13 7.459,63.019 13.26,69.13 14.918,67.557 9.034,61.353"/></svg></button>
+      </nav>
+  </div>
+
+</header>
+
+<nav id="mobile-menu">
+	<div id="act-button">
+	    Menu
+	</div>
+	<div class="menu-main-container">
+		<ul id="menu-main" class="menu">
+			<li class="menu-item menu-item-has-children"><a href="https://www.ece.uw.edu/news-events/">News + Events</a>
+				<ul class="sub-menu">
+					<li class="menu-item"><a href="https://www.ece.uw.edu/news-events/calendar/">
+						Events Calendar</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/research-colloquium/">
+						Research Colloquium</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/lytle-lecture-series/">
+						Lytle Lecture Series</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/graduation">
+						Graduation</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/entrepreneurship/capstone-fair/">
+						Capstone Fair</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/news-events/eek/">
+						Electrical Engineering Kaleidoscope</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/news-events/integrator/">
+						The Integrator Newsletter</a></li>
+				</ul>
+			</li>
+			<li class="menu-item menu-item-has-children"><a href="https://www.ece.uw.edu/faculty/">People</a>
+				<ul class="sub-menu">
+					<li class="menu-item"><a href="https://www.ece.uw.edu/faculty/">Faculty</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/staff/">Staff</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/emeritus/">Emeritus Faculty</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/adjunct/">Adjunct Faculty</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/affiliate/">Affiliate Faculty</a></li>
+				</ul>
+			</li>
+			<li class="menu-item menu-item-has-children"><a href="https://www.ece.uw.edu/academics/">Academics</a>
+				<ul class="sub-menu">
+					<li class="menu-item"><a href="https://www.ece.uw.edu/academics/bs/">
+						Bachelor of Science</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/academics/bs-ms/">
+						Combined BS-MS</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/academics/grad/">
+						Master&#8217;s &#038; Ph.D.</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/academics/pmp/">
+						Professional Master&#8217;s Program</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/academics/non-matriculated/">
+						Non-Degree Options</a></li>
+				</ul>
+			</li>
+			<li class="menu-item menu-item-has-children"><a href="https://www.ece.uw.edu/research/">Research</a>
+				<ul class="sub-menu">
+					<li class="menu-item"><a href="https://www.ece.uw.edu/researcharea/biosystems/">
+						Biosystems</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/researcharea/communications-and-networking/">
+						Computing and Networking</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/researcharea/data-science/">
+						Data Science</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/researcharea/nanotechnology-mems-and-photonics/">
+						Photonics and Nano Devices</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/researcharea/power-and-energy/">
+						Power and Energy Systems</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/researcharea/systems-controls-and-robotics/">
+						Robotics and Controls</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/research/centers/">
+						Research Centers</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/research/labs-and-research-areas/">
+						Research Labs</a></li>
+					<li class="menu-item"><a href="https://vannevar.ece.uw.edu/cgi-bin/research/projects/index.pl">
+						Research Projects</a></li>
+				</ul>
+			</li>
+			<li class="menu-item menu-item-has-children"><a href="https://www.ece.uw.edu/entrepreneurship/">Innovation</a>
+				<ul class="sub-menu">
+					<li class="menu-item"><a href="https://www.ece.uw.edu/entrepreneurship/entrepreneurial-capstone/">
+						Engineering Entrepreneurial Capstone</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/entrepreneurship/washington-nanofabrication-facility/">
+						Washington Nanofabrication Facility</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/entrepreneurship/makerspace-accelerating-innovation/">
+						Makerspace: Accelerating Innovation</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/entrepreneurship/snupi-an-innovative-approach-to-home-monitoring-systems/">
+						SNUPI: Home Monitoring Systems</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/entrepreneurship/bluhaptics-equipping-underwater-robots-with-human-touch/">
+						BluHaptics: Underwater Robots with Human Touch</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/entrepreneurship/wibotic-charged-up-about-wireless-power-for-robots/">
+						WiBotic: Wireless Power for Robots</a></li>
+				</ul>
+			</li>
+			<li class="menu-item menu-item-has-children"><a href="https://www.ece.uw.edu/engage/">Get Involved</a>
+				<ul class="sub-menu">
+					<li class="menu-item"><a href="https://www.ece.uw.edu/engage/researchers/">Researchers</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/engage/industry/">Industry Sponsors</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/engage/prospects/">Prospective Students</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/engage/students/">Current Students</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/engage/alumni/">Alumni</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/engage/donors/">Give to UW ECE</a></li>
+				</ul>
+			</li>
+			<li class="menu-item menu-item-has-children"><a href="https://www.ece.uw.edu/about/">About</a>
+				<ul class="sub-menu">
+					<li class="menu-item"><a href="https://www.ece.uw.edu/about/message-from-the-chair/">
+						Message from the Chair</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/about/chairsoffice/">
+						Office of the Chair</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/about/contact-us/">
+						Contact Us</a></li>
+					<li class="menu-item"><a href="https://www.ece.uw.edu/about/abet/">
+						ABET Accreditation</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+<script>
+var menubutton = document.getElementById('act-button');
+var menuelement = document.getElementById('mobile-menu');
+console.dir(menubutton);
+menubutton.addEventListener('click', function(e){
+if(menuelement.className == 'is-active'){
+	menuelement.className = '';
+}
+else {
+	menuelement.className = 'is-active';
+}
+});
+</script>
+<script type="text/javascript">
+	viewportUnitsBuggyfill.refresh();
+</script>
+<nav id="dawgdrops">
+	<div class="dawgdrops-inner container" role="application">
+		<ul id="menu-main-1" class="dawgdrops-nav">
+			<li class="dawgdrops-item">
+				<a href="https://www.ece.uw.edu/news-events/" class="dropdown-toggle">News + Events</a>
+				<ul class="dawgdrops-menu">
+					<li><a href="https://www.ece.uw.edu/news-events/calendar/" tabindex="-1">
+						Events Calendar</a></li>
+					<li><a href="https://www.ece.uw.edu/research-colloquium/" tabindex="-1">
+						Research Colloquium</a></li>
+					<li><a href="https://www.ece.uw.edu/lytle-lecture-series/" tabindex="-1">
+						Lytle Lecture Series</a></li>
+					<li><a href="https://www.ece.uw.edu/graduation" tabindex="-1">
+						Graduation</a></li>
+					<li><a href="https://www.ece.uw.edu/entrepreneurship/capstone-fair/" tabindex="-1">
+						Capstone Fair</a></li>
+					<li><a href="https://www.ece.uw.edu/news-events/eek/" tabindex="-1">
+						Electrical Engineering Kaleidoscope</a></li>
+					<li><a href="https://www.ece.uw.edu/news-events/integrator/" tabindex="-1">
+						The Integrator Newsletter</a></li>
+				</ul>
+			</li>
+			<li class="dawgdrops-item">
+				<a href="https://www.ece.uw.edu/faculty/" class="dropdown-toggle">People</a>
+				<ul class="dawgdrops-menu">
+					<li><a href="https://www.ece.uw.edu/faculty/" tabindex="-1">
+						Faculty</a></li>
+					<li><a href="https://www.ece.uw.edu/staff/" tabindex="-1">
+						Staff</a></li>
+					<li><a href="https://www.ece.uw.edu/emeritus/" tabindex="-1">
+						Emeritus Faculty</a></li>
+					<li><a href="https://www.ece.uw.edu/adjunct/" tabindex="-1">
+						Adjunct Faculty</a></li>
+					<li><a href="https://www.ece.uw.edu/affiliate/" tabindex="-1">
+						Affiliate Faculty</a></li>
+				</ul>
+			</li>
+			<li class="dawgdrops-item">
+				<a href="https://www.ece.uw.edu/academics/" class="dropdown-toggle">Academics</a>
+				<ul class="dawgdrops-menu">
+					<li><a href="https://www.ece.uw.edu/academics/bs/" tabindex="-1">
+						Bachelor of Science</a></li>
+					<li><a href="https://www.ece.uw.edu/academics/bs-ms/" tabindex="-1">
+						Combined BS-MS</a></li>
+					<li><a href="https://www.ece.uw.edu/academics/grad/" tabindex="-1">
+						Master&#8217;s &#038; Ph.D.</a></li>
+					<li><a href="https://www.ece.uw.edu/academics/pmp/" tabindex="-1">
+						Professional Master&#8217;s Program</a></li>
+					<li><a href="https://www.ece.uw.edu/academics/non-matriculated/" tabindex="-1">
+						Non-Degree Options</a></li>
+				</ul>
+			</li>
+			<li class="dawgdrops-item">
+				<a href="https://www.ece.uw.edu/research/" class="dropdown-toggle">Research</a>
+				<ul class="dawgdrops-menu">
+					<li><a href="https://www.ece.uw.edu/researcharea/biosystems/" tabindex="-1">
+						Biosystems</a></li>
+					<li><a href="https://www.ece.uw.edu/researcharea/communications-and-networking/" tabindex="-1">
+						Computing and Networking</a></li>
+					<li><a href="https://www.ece.uw.edu/researcharea/data-science/" tabindex="-1">
+						Data Science</a></li>
+					<li><a href="https://www.ece.uw.edu/researcharea/nanotechnology-mems-and-photonics/" tabindex="-1">
+						Photonics and Nano Devices</a></li>
+					<li><a href="https://www.ece.uw.edu/researcharea/power-and-energy/" tabindex="-1">
+						Power and Energy Systems</a></li>
+					<li><a href="https://www.ece.uw.edu/researcharea/systems-controls-and-robotics/" tabindex="-1">
+						Robotics and Controls</a></li>
+					<li><a href="https://www.ece.uw.edu/research/centers/" tabindex="-1">
+						Research Centers</a></li>
+					<li><a href="https://www.ece.uw.edu/research/labs-and-research-areas/" tabindex="-1">
+						Research Labs</a></li>
+					<li><a href="https://vannevar.ece.uw.edu/cgi-bin/research/projects/index.pl" tabindex="-1">
+						Research Projects</a></li>
+				</ul>
+			</li>
+			<li class="dawgdrops-item">
+				<a href="https://www.ece.uw.edu/entrepreneurship/" class="dropdown-toggle">Innovation</a>
+				<ul class="dawgdrops-menu">
+					<li><a href="https://www.ece.uw.edu/entrepreneurship/entrepreneurial-capstone/"
+						tabindex="-1">Engineering Entrepreneurial Capstone</a></li>
+					<li><a href="https://www.ece.uw.edu/entrepreneurship/washington-nanofabrication-facility/"
+						tabindex="-1">Washington Nanofabrication Facility</a></li>
+					<li><a href="https://www.ece.uw.edu/entrepreneurship/makerspace-accelerating-innovation/"
+						tabindex="-1">Makerspace: Accelerating Innovation</a></li>
+					<li><a href="https://www.ece.uw.edu/entrepreneurship/snupi-an-innovative-approach-to-home-monitoring-systems/"
+						tabindex="-1">SNUPI: Home Monitoring Systems</a></li>
+					<li><a href="https://www.ece.uw.edu/entrepreneurship/bluhaptics-equipping-underwater-robots-with-human-touch/"
+						tabindex="-1">BluHaptics: Underwater Robots with Human Touch</a></li>
+					<li><a href="https://www.ece.uw.edu/entrepreneurship/wibotic-charged-up-about-wireless-power-for-robots/"
+						tabindex="-1">WiBotic: Wireless Power for Robots</a></li>
+				</ul>
+			</li>
+			<li class="dawgdrops-item">
+				<a href="https://www.ece.uw.edu/engage/" class="dropdown-toggle">Get Involved</a>
+				<ul class="dawgdrops-menu">
+					<li><a href="https://www.ece.uw.edu/engage/researchers/" tabindex="-1">Researchers</a></li>
+					<li><a href="https://www.ece.uw.edu/engage/industry/" tabindex="-1">Industry Sponsors</a></li>
+					<li><a href="https://www.ece.uw.edu/engage/prospects/" tabindex="-1">Prospective Students</a></li>
+					<li><a href="https://www.ece.uw.edu/engage/students/" tabindex="-1">Current Students</a></li>
+					<li><a href="https://www.ece.uw.edu/engage/alumni/" tabindex="-1">Alumni</a></li>
+					<li><a href="https://www.ece.uw.edu/engage/donors/" tabindex="-1">Give to UW ECE</a></li>
+				</ul>
+			</li>
+			<li class="dawgdrops-item">
+				<a href="https://www.ece.uw.edu/about/" class="dropdown-toggle">About</a>
+				<ul class="dawgdrops-menu">
+					<li><a href="https://www.ece.uw.edu/about/message-from-the-chair/" tabindex="-1">Message from the Chair</a></li>
+					<li><a href="https://www.ece.uw.edu/about/chairsoffice/" tabindex="-1">Office of the Chair</a></li>
+					<li><a href="https://www.ece.uw.edu/about/contact-us/" tabindex="-1">Contact Us</a></li>
+					<li><a href="https://www.ece.uw.edu/about/abet/" tabindex="-1">ABET Accreditation</a></li>
+				</ul>
+			</li>
+		</ul>
+
+	</div>
+</nav>
+<div class="d2-title-bar"><h1><!-- TemplateBeginEditable name="Main title" -->Jenq-Neng Hwang<!-- TemplateEndEditable --></h1></div>
+	<main class="container uw-body" tabindex="-1" style="outline: none;">
+
+		<nav class='uw-breadcrumbs' role='navigation' aria-label='breadcrumbs' style="margin-top: 0 !important;"><!-- TemplateBeginEditable name="Section title" --><ul><li><a href="http://uw.edu" title="University of Washington">Home</a></li><li><a href="https://www.ece.uw.edu/" title="UW Department of Electrical &amp; Computer Engineering">UW Department of Electrical &amp; Computer Engineering</a><li><li class="current"><a href="https://www.ece.uw.edu/faculty/" title="Faculty">Faculty</a></li></ul><!-- TemplateEndEditable --></nav>
+
+	<div id="faculty_data_container" style="padding-top: 25px;">
+
+
+<!-- TemplateBeginEditable name="Main content" -->
+
+<!-- ************************************************ -->
+<!-- ***                                          *** -->
+<!-- ***    YOUR EDITABLE INFORMATION IS BELOW    *** -->
+<!-- ***                                          *** -->
+<!-- ************************************************ -->
+
+<div id="faculty_photo" class="wp-caption alignleft" style="width: 210px; margin-top: 0px;">
+
+	<!-- THIS IS YOUR PHOTO -->
+	<img src="/bio_photos/hwang-20211025.jpg" title="Jenq-Neng Hwang" height="267" />
+	<!-- END OF YOUR PHOTO -->
+
+</div>
+<div id="faculty_address">
+<p>
+Professor; Co-Director of Cross-Pacific AI Initiative (X-PAI)<br />
+<a href="https://www.ece.uw.edu/researcharea/data-science/"><em>Data Science</em></a>, <a href="https://www.ece.uw.edu/researcharea/communications-and-networking/"><em>Computing and Networking</em></a><br />
+M426 ECE<br />
+Campus Box 352500<br />
+University of Washington<br />
+Seattle, WA 98195
+<br />
+Phone: 206-685-1603<br />
+Email: <a href="mailto:hwang@uw.edu">hwang@uw.edu</a><br />
+Research Web Page: <a href="https://ipl-uw.github.io/">Information Processing Lab</a><br />
+
+</p>
+</div>
+<br clear="all" />
+
+		<script src="/wp-content/themes/uw-2014-main/js/uw.accordionmodule.js" type="text/javascript"></script>
+		<div id="uw-accordion-shortcode">
+			<div class="js-accordion" data-accordion-prefix-classes="uw-accordion-shortcode">
+
+				<!-- this_is_the_start_of_section_1 -->
+				<h2 class="js-accordion__header">Biography</h2>
+				<div class="js-accordion__panel" data-accordion-opened="true">
+
+					<!-- Make your Biography section changes below this line -->
+
+					<p>Dr. Jenq-Neng Hwang received the BS and MS degrees, both in electrical engineering from the National Taiwan University, Taipei, Taiwan, in 1981 and 1983 separately. He then received his Ph.D. degree from the University of Southern California. In the summer of 1989, Dr. Hwang joined the Department of Electrical and Computer Engineering (ECE) of the University of Washington in Seattle, where he has been promoted to Full Professor since 1999. He served as the Associate Chair for Research from 2003 to 2005, and from 2011-2015. He also served as the Associate Chair for Global Affairs from 2015-2020. He is currently the International Programs Lead in the ECE Department. Currently, he serves as the Co-Director of <a href="https://xpai.engr.uw.edu/" target="_blank">Cross-Pacific AI Initiative (X-PAI) </a>in the College of Engineering (CoE), UW. He is the Founder and Director of the Information Processing Lab., which has won several AI City Challenges awards in the past years. He has written more than 450 journal, conference papers and book chapters in the areas of machine learning, multimedia signal processing, computer vision, and multimedia system integration and networking (my <a href="https://scholar.google.com/citations?user=b365J6kAAAAJ&amp;hl=zh-TW&amp;oi=ao" target="_blank">Google citation</a>), including an authored textbook on "Multimedia Networking: from Theory to Practice," published by Cambridge University Press. Dr. Hwang has close working relationship with the industry on artificial intelligence and machine learning.</p><p>Dr. Hwang received the 1995 IEEE Signal Processing Society's Best Journal Paper Award. He is a founding member of Multimedia Signal Processing Technical Committee of IEEE Signal Processing Society and was the Society's representative to IEEE Neural Network Council from 1996 to 2000. He is currently a member of Multimedia Technical Committee (MMTC) of IEEE Communication Society and also a member of Multimedia Signal Processing Technical Committee (MMSP TC) of IEEE Signal Processing Society. He served as associate editors for IEEE T-SP, T-NN and T-CSVT, T-IP and Signal Processing Magazine(SPM). He served as the General Co-Chair of 2021 and 2022 IEEE World AI IoT Congress, Seattle, WA. He also served as the Program Co-Chair of IEEE ICME 2016 and was the Program Co-Chairs of ICASSP 1998 and ISCAS 2009. Dr. Hwang is a fellow of IEEE since 2001.</p><p><br></p><p>For more info, please see my updated <a href="https://ipl-uw.github.io/files/Jenq-Neng_Hwang_CV.pdf" target="_blank">curriculum vitae</a></p>
+
+					<!-- Make your Biography section changes above this line -->
+
+				</div>
+				<!-- this_is_the_end_of_section_1 -->
+
+				<!-- this_is_the_start_of_section_2 -->
+				<h2 class="js-accordion__header">Awards and Honors</h2>
+				<div class="js-accordion__panel">
+
+					<!-- Make your Awards & Honors section changes below this line -->
+
+					<p>Awards and Honors</p><ul><li><a href="https://sites.google.com/view/mipr-2025/ieee-mipr" target="_blank">Best Paper Award in the IEEE MIPR 2025,</a> entitled "UniHPR: Unified Human Pose Representation via Singular Value Contrastive Learning."</li><li>Winner of the 2025 <a href="https://www.aicitychallenge.org/2025-challenge-winners/" target="_blank">AI City Challenge-Track 3: Warehouse Spatial Intelligence</a>, in ICCV 2025</li><li>Winner of both&nbsp;<a href="https://macvi.org/workshop/macvi24/challenges/uav_track" target="_blank">UAV-based Multi-Object Tracking with Reidentification</a>&nbsp;and&nbsp;<a href="https://macvi.org/workshop/macvi24/challenges/usv_track" target="_blank">USV-based Multi-Object Tracking</a>&nbsp;track at the&nbsp;<a href="https://macvi.org/workshop/macvi24/challenges/" target="_blank">2nd Workshop on Maritime Computer Vision (MaCVi)</a>&nbsp;in WACV 2024.</li><li>Winner of Track 1: <a href="https://www.aicitychallenge.org/2023-challenge-winners/" target="_blank">Multi-Camera People Tracking, AI City Challenge 2023,</a> IEEE/CVF CVPR 2023.</li><li>3rd place of SportsMoT Challenge on Multi-actor Tracking, ECCV 2022</li><li>Winner of Video Track (both MOTChallenge-STEP and KITTI-STEP dataset) in the&nbsp;<a href="https://motchallenge.net/workshops/bmtt2021/" target="_blank">6th BMTT Challenge</a>&nbsp;(in conjunction with ICCV 2021)</li><li>3rd place of Camera-View Track in the&nbsp;<a href="https://iccv2021-mmp.github.io/" target="_blank">ICCV 2021 Multi-camera Multiple People Tracking Workshop</a></li><li>Winners of IEEE CVPR <a href="https://ipl-uw.github.io/news/2020-06-11-cvpr20-bmtt.html" target="_blank">5th BMTT MOTChallenge Workshop: Multi-Object Tracking and Segmentation</a>, 2020</li><li>Winners of IEEE CVPR annual <a href="https://www.aicitychallenge.org/" target="_blank">AI City Challenge 2018, 2019</a> and the <a href="https://www.ece.uw.edu/spotlight/ece-team-wins-competition-in-ai-challenges/" target="_blank">corresponding reports</a></li><li>Annual Faculty Service Award, UWEE, 2006</li><li>IEEE Fellow, 2001&nbsp;</li><li><a href="http://www.signalprocessingsociety.org/uploads/awards/Best_Paper.pdf" target="_blank">IEEE SP Society Best (Journal) Paper Award, 1995.</a></li></ul><p><br></p><p>Recent Invited Talks</p><ul><li>"Generative AI for Precision Health," Keynote speech for the Building Bridges to Better Aging Workshop, Seattle, April 2024</li><li>"Perceptual and Generative AI for Healthcare Applications," Keynote speech for the NIH-NCKU Smart Healthcare Workshop, Tainan, Taiwan, September 2023From Visual Monitoring of Fisheries to the Smart Ocean," Keynote speech for the 10th International Conference&nbsp;on Computing and Pattern Recognition, Shanghai China, Oct. 15-17, 2021</li><li>"Electronic Visual Monitoring Challenges and Developments with AI," invited panel talk in Global Forum on Artificial intelligence for a Digital Blue Planet, Food and Agriculture Organization (FAO) of United Nation, June 28-30, 2021</li><li>"Coordinated Exploration of Big Visual Data for AI City Applications," Keynote speech for AI Frontier Summit, Korea Institute of Communications and Information Sciences (KICS) society, Korea, May 24-25, 2021</li><li>"Multi-Target and Multi-Camera Tracking under Deep Learning Detections," Tutorial speech for The Third International Conference on AI in information and communication (ICAIIC 2021), April 13-16, Jeju Island, Korea 2021</li><li>"When 5G Meets with Big IoT Data for Coordinated Mining of 3D World," Keynote speech for The <strong>&nbsp;</strong>IEEE International Conf. on Consumer Electronics -- Taiwan (ICCE-TW), Sep. 28-30, 2020.</li><li>"Mobile Edge Joint Exploration of Big IoT Data for Smart City Applications," Keynote speech for The 9th IEEE/CIC International Conference on Communications in China (ICCC 2020), August 9-11, 2020, Chongqing, China.</li><li>“Electronic Visual Monitoring for the Smart Ocean,” Keynote speech for 10th IEEE Annual Information Technology, Electronics and Mobile Communication Conference, Vancouver BC Canada, October 17-19, 2019.</li><li>“Multiple Object Tracking in Videos,” Tutorial talk, IEEE ICIP, September 22-29, 2019, Taipei.</li><li>“Coordinated 3D World Exploration for Smart Surveillance and Autonomous Driving,” Keynote speech for 16th IEEE International Conference on Advanced Video and Signal-based Surveillance (AVSS), September 18-21, 2019, Taipei.</li><li>“Electronic Visual Monitoring for the Smart Ocean,” Keynote speech for the 11th International Conference on Digital Image Processing (ICDIP), May 10-13, 2019, Guangzhou, China.&nbsp;</li><li>"Dynamic 3D Inference of Big Visual Data for Smart City," Keynote speech for the IEEE 20th International Workshop on Multimedia Signal Processing (MMSP), August 29-31, 2018, Vancouver, Canada.&nbsp;</li><li>"Coordinated 3D-Information Mining of Big Visual Data for Smart City," Keynote speech for the 10th International Conference on Digital Image Processing (ICDIP), May 11-14, 2018, Shanghai, China.&nbsp;</li><li>"Coordinated Mining of Big Visual Data for Smart City," Keynote speech for the 8th IEEE Annual Computing and Communication Workshop and Conference (CWCC), Jan. 8-10, 2018, Las Vegas, USA.&nbsp;</li></ul>
+
+					<!-- Make your Awards & Honors section changes above this line -->
+
+				</div>
+				<!-- this_is_the_end_of_section_2 -->
+
+				<!-- this_is_the_start_of_section_3 -->
+				<h2 class="js-accordion__header">Research Projects</h2>
+				<div class="js-accordion__panel">
+
+					<!-- Make your Research Projects section changes below this line -->
+
+					<ol><li><a href="https://www.ece.uw.edu/projects/human-tracking-and-re-identification/" target="_blank"><strong>﻿</strong>Human Tracking and Re-Identification</a></li><li><a href="https://www.ece.uw.edu/projects/underwater-video-analyses-for-fishery-science/" target="_blank">Underwater Video Analyses for Fishery Science</a></li><li><a href="https://www.ece.uw.edu/projects/qos-enhancement-of-wireless-video-networking/" target="_blank">QoS Enhancement of Wireless Video Networking</a></li><li><a href="https://www.ece.uw.edu/projects/3d-human-pose-estimation-based-on-structure-from-motion/" target="_blank">3D Human Pose Estimation Based on </a>Hierarchical Modeling</li><li><a href="https://www.ece.uw.edu/projects/on-board-chute-based-image-analyses-for-electronic-fishery-monitoring/" target="_blank">On Board Chute Based Image Analyses for Electronic Fishery Monitoring</a> (NOAA, Pacific States Marine Fisheries Commission), 7/1/2018-6/30/2024</li><li>Mutual Learning and Fusion of Camera and Radar for Autonomous Driving (CMMB Vision)</li><li>Baby Pose Estimation for Early Autism Detection (ETRI), 4/1/2019-12/31/2021</li><li>Development of Vehicle Detection, Tracking, and Re-Identification Methods for Deep Learning-based Multi-Camera Traffic Surveillance&nbsp;(ETRI), 4/1/2020-12/31/2024</li><li>Machine Learning for 3D Carotid Artery of MRI (Philips North America) 9/16/2018-9/15/2020</li><li>Human Pose Estimation and Analytics (Sports Box AI), 3/16/2020-12/15/2024</li><li>Automated Visual Processing for Gulf Fisheries Applications (SouthEast Fisheries Science Center, SEFSC, NOAA), 9/16/2020-3/15/2027</li><li>Multi-Human Multi-Camera Tracking and Pose Estimation in Nursery Homes (Quanta Computers, NCTU), 9/16/2020-3/16/2021</li><li>Species Identification of New Zealand Underwater Fish, (The National Institute of Water and Atmospheric Research (NIWA)), 12/16/2021-12/15/2022&nbsp;</li><li>Cross-Modality Supervision for 3D Object Detection Under Adverse Autonomous Driving (Cisco Research), 1/1/2022-3/15/2024</li><li>Advanced AI Techniques for Fish Age Estimation (AFSC, NOAA), 9/1/2022-8/31/2023</li></ol>
+
+					<!-- Make your Research Projects section changes above this line -->
+
+				</div>
+				<!-- this_is_the_end_of_section_3 -->
+
+				<!-- this_is_the_start_of_section_4 -->
+				<h2 class="js-accordion__header">Recent Publications</h2>
+				<div class="js-accordion__panel">
+
+					<!-- Make your Publications section changes below this line -->
+
+					<p><strong>Journals:</strong></p><p><br></p><ol><li>Guanhong Wang, Pengyu Li, Jenq-Neng Hwang, Xi Li, Gaoang Wang, "Temporal-Aware Dynamic Memory Modulation for Audio-Visual Segmentation," accepted by IEEE Transactions on Multimedia, March 2026</li><li>Enxin Song, Wenhao Chai, Tian Ye, Jenq-Neng Hwang, Xi Li, Gaoang Wang, "MovieChat+: Question-aware Sparse Memory for Long Video Question Answering," accepted by IEEE Transaction on PAMI, August 2025</li><li>Zhongghan Zhao, Wenhao Chai, Shengyu Hao, Wenhao Hu, Guanhong Wang, Shidong Cao, Mingli Song, Jenq-Neng Hwang, Gaoang Wang, "A Survey of Deep Learning in Sports Applications: Perception, Comprehension, and Decision," accepted by IEEE Transactions on Visualization and Computer Graphics, March 2025</li><li>Shidong Cao, Zhonghan Zhao, Shengyu Hao, Wenhao Chai, Jenq-Neng Hwang, Hongwei Wang, and Gaoang Wang, "Efficient Transfer from Image-based Large Multimodal Models to Video Tasks," accepted by IEEE Trans. on Multimedia, Jan. 2025&nbsp;</li><li>Maysam Orouskhani, Negar Firoozeh, Huayu Wang, Yan Wang, Hanrui Shi, Weijing Li, Beibei Sun, Jianjian Zhang, Xiao Li, Huilin Zhao, Mahmud Mossa-Basha, Jenq-Neng Hwang, Chengcheng Zhu, "Morphology and Texture-Guided Deep Neural Network for Intracranial Aneurysm Segmentation in 3D TOF-MRA." accepted by the Neuroinformatics, August 2024.</li><li>Xiaoyan Jiang, Hangyu Tao, Jenq-Neng Hwang, Zhijun Fang, "<a href="https://ieeexplore.ieee.org/document/10327773" target="_blank">A Multiscale Coarse-to-Fine Human Pose Estimation Network With Hard Keypoint Mining,</a>" IEEE Trans. on Systems, Man and Cybernetics, Systems, November 2023</li><li>Shenghao Hao, P. Liu, Y. Zhan, K. Jin, Z. Liu, M. Song, J.-N. Hwang, G. Wang, “<a href="https://github.com/shengyuhao/DIVOTrack" target="_blank">DIVOTrack: A Novel Dataset and Baseline Method for Cross-View Multi-Object Tracking in DIVerse Open Scenes</a>”, accepted by International Journal of Computer Vision (IJCV), 2023.&nbsp;</li><li>Hung-Min Hsu, Yizhou Wang, Cheng-Yen Yang, Jenq-Neng Hwang, Hoang Le Uyen Thuc, Kwang-Ju Kim, "<a href="https://urldefense.com/v3/__https://ieeexplore.ieee.org/document/10113150__;!!K-Hz7m0Vt54!mxpg-jHUfB5T797Yp-zO9r-zG88vhDrHpOX3Kmxtzw-oeg3jW3ja-hgUm6dwtYSLN6kkL6dIanE$" target="_blank">Learning Temporal Attention based Keypoint-guided Embedding for Gait Recognition,</a>" accepted by the special issue on "Biometrics at a distance in the Deep Learning era,” the IEEE Journal of Selected Topics in Signal Processing, April 2023.</li><li>Zheng Li, Caili Guo, Zerun Feng, Jenq-Neng Hwang, Zhongtian Du, "I<a href="https://ieeexplore.ieee.org/document/10081045" target="_blank">ntegrating Language Guidance into Image-Text Matching for Correcting False Negatives</a>," accepted by IEEE Trans. on Multimedia, March 2023.</li><li>F. Tian, Yongbin Gao, Zhijun Fang, Yuming Fang, Jia Gu, Hamido Fujita, Jenq-Neng Hwang, "<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9432864" target="_blank">Depth Estimation Using A Self-Supervised Network based on Cross-layer Feature Fusion and the Quadtree Constraint</a>," IEEE T-CSVT, 32(4):1751-1766, April 2022</li><li>Yiling Xu,&nbsp;Qi Yang,&nbsp;Le Yang, Jenq-Neng Hwang, "<a href="https://ieeexplore.ieee.org/document/9552578?source=authoralert" target="_blank">EPES: Point Cloud Quality Modeling Using Elastic Potential Energy Similarity</a>," IEEE Trans. on Broadcasting, 68(1): 33-42, March 2022</li><li>C Zheng, J Zhang, JN Hwang, B Huang, "<a href="https://www.sciencedirect.com/science/article/abs/pii/S095070512200017X" target="_blank">Double-Branch Dehazing Network based on Self-Calibrated Attentional Convolution</a>," Knowledge-Based Systems, Elsevier, Vol. 240, March 2022</li><li>W. Zhou, J. Jin, J. Lei, and J.-N. Hwang, "<a href="https://ieeexplore.ieee.org/document/9538389?source=authoralert" target="_blank">CEGFNet: Common Extraction and Gate Fusion Network for Scene Parsing of Remote Sensing Images,</a>" IEEE Trans. on GeoScience and Remote Sensing, 60:1-10, Jan. 2022</li><li>Gaoang Wang, Yizhou Wang, Renshu Gu, Weijie Hu, Jenq-Neng Hwang, "<a href="https://ieeexplore-ieee-org.offcampus.lib.washington.edu/stamp/stamp.jsp?tp=&amp;arnumber=9672670" target="_blank">Split and Connect: A Universal Tracklet Booster for Multi-Object Tracking</a>," IEEE Trans. on Multimedia, Jan. 2022 (early access)</li><li>Li Chen, et. al, "<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.28794" target="_blank">Domain Adaptive and Fully Automated Carotid Artery Atherosclerotic Lesion Detection using an Artificial Intelligence Approach (LATTE) on 3D MRI</a>," Magnetic Resonance in Medicine, 86(3):1662-1673, September 2021.</li><li>W. Zhou, X. Lin, J. Lei, L. Yu and J.-N. Hwang, “<a href="https://ieeexplore-ieee-org.offcampus.lib.washington.edu/document/9447924" target="_blank">MFFENet: Multiscale Feature Fusion and Enhancement Network for RGB–Thermal Urban Road Scene Parsing</a>,” IEEE Transactions on Multimedia, June 2021 (early access)</li><li>Yizhou~Wang, Zhongyu~Jiang,Yudong~Li, Jenq-Neng~Hwang, Guanbin~Xing, Hui~Liu,"<a href="https://ieeexplore.ieee.org/document/9353210?source=authoralert" target="_blank">RODNet: A Real-Time Radar Object Detection Network Cross-Supervised by Camera-Radar Fused Object 3D Localization</a>," IEEE Journal of Selected Topics in Signal Processing, special issue on Recent Advances in Automotive Radar Signal Processing, 15(4):954-967, June 2021.</li><li>Hung-Min Hsu, Jiarui Cai, Yizhou Wang, Jenq-Neng Hwang, Kwangju Kim, "<a href="https://ieeexplore-ieee-org.offcampus.lib.washington.edu/document/9432848" target="_blank">Multi-Target Multi-Camera Tracking of Vehicles using Metadata-Aided Re-ID and Trajectory-Based Camera Link Model</a>," IEEE Trans. on Image Processing, 30:5198-5210, May 2021.</li><li>Kaiyig Zhu, XiaoyanJ iang, Zhijun Fang, Yongbin Gao, Hamido Fujita, Jenq-Neng Hwang, "<a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705120308005" target="_blank">Photometric transfer for direct visual odometry,</a>" Knowledge-Based Systems, Volume 213,&nbsp;15 February 2021</li><li>Jen-Hui Chuang, Chih-Hui Ho, Ardian Umam, Hsin-Yi Chen, Jenq-Neng Hwang, and Tai-An Chen, "<a href="https://ieeexplore.ieee.org/document/9318550" target="_blank">Geometry-based Camera Calibration Using Closed-form Solution of Principal Line</a>," IEEE Trans. on Image Processing, 30(1): 2599-2610, Jan. 2021.&nbsp;</li><li>Li Chen, Jie Sun, Gador Canton, Niranjan Balu, Daniel S. Hippe, Xihai Zhao, Rui Li, Thomas S. Hatsukami, Jenq-Neng Hwang, and Chun Yuan, "<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9269957" target="_blank">Automated Artery Localization and Vessel Wall Segmentation using Tracklet Refinement and Polar Conversion</a>," IEEE Access, 8:217603&nbsp;- 217614, November 2020.</li><li>Renshu Gu, Gaoang Wang, Zhongyu Jiang, Jenq-Neng Hwang, "<a href="https://ieeexplore.ieee.org/document/8901403?source=authoralert" target="_blank">Multi-Person Hierarchical 3D Pose Estimation in Natural Videos</a>," IEEE Trans. on CSVT, 30(11):4245-4257, November 2020</li><li>Li Chen, Gador Canton, Wenjin Liu, Daniel S. Hippe, Niranjan Balu, Hiroko Watase, Thomas S. Hatsukami, John C. Waterton, Jenq-Neng Hwang, Chun Yuan,"<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.28237" target="_blank">Fully automated and Robust Analysis Technique for Popliteal Artery Vessel Wall Evaluation (FRAPPE) using Neural Network Models from Standardized Knee MRI</a>," Magnetic Resonance in Medicine, 84(4):2147-2160, October&nbsp;2020&nbsp;</li><li>Wujie Zhou, Jin-Sheng Lei, Jenq-Neng Hwang, Lu Yu, "<a href="https://ieeexplore.ieee.org/document/9201176" target="_blank">Salient Object Detection in Stereoscopic 3D Images Using a Deep Convolutional Residual Autoencoder</a>," IEEE Trans. on Multimedia,23:3388-3399, September 2020.</li><li>Fangyi Zhu, Jenq-Neng Hwang, Zhanyu Ma, Guang Chen, Jun Guo, "<a href="https://ieeexplore.ieee.org/document/9186666" target="_blank">Understanding Objects in Video: Object-Oriented Video Captioning via Structured Trajectory and Adversarial Learning,</a>" IEEE Access, 8(4):169146&nbsp;- 169159, August 2020.</li><li>Ren-Hung Hwang, Chih-Yu Wang, Jenq Neng Hwang, Yu-Ren Lin, Wei-Yu Chen, "<a href="https://ieeexplore.ieee.org/abstract/document/9146740" target="_blank">Optimizing Live Layered Video Multicasting over LTE with Mobile Edge Computing</a>," IEEE Trans. on Vehicular Technology, pp. 12072&nbsp;- 12084, July 23, 2020.</li><li>Yaqing Wang, Chunyan Feng, Caili Guo, Yunfei Chu, Jenq-Neng Hwang, "<a href="https://www.sciencedirect.com/science/article/pii/S0925231219315711?utm_campaign=STMJ_75273_AUTH_SERV_PPUB&amp;utm_medium=email&amp;utm_dgroup=Email1Publishing&amp;utm_acid=40536151&amp;SIS_ID=0&amp;dgcid=STMJ_75273_AUTH_SERV_PPUB&amp;CMX_ID=&amp;utm_in=DM640350&amp;utm_source=AC_30&amp;utm_term=Email%201%20Publishing_TLSH" target="_blank">A Cross-Domain Hierarchical Recurrent Model for Personalized Session-Based Recommendations</a>," Neurocomputing, 380:271-284, March 2020.</li><li>Zhiqian Jiang, Wei Huang, Hao Chen, Yiling Xu, Xu Zhang, Jenq-Neng Hwang, Zhan Ma, Jun Sun, "<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8937010" target="_blank">A Hierarchical Buffer Management Approach to Rate Adaptation for 360-Degree Video Streaming</a>," IEEE Trans. on Vehicular Technology, 69(2):2157-2170, Feb. 2020</li><li>Anjie Wang, Zhijun Fang, Yongbin Gao, Songchao Tan, Shanshe Wang, Siwei Ma, Jenq-Neng Hwang, "<a href="https://ieeexplore.ieee.org/document/8972902" target="_blank">Adversarial Learning for Joint Optimization of Depth and Ego-Motion</a>," IEEE Trans. on Image Processing, 29(1): 4130-4142, Jan. 2020.</li><li>Yanting Zhang, Haotian Zhang, Gaoang Wang, Jie Yang, Jenq-Neng Hwang, "<a href="https://ieeexplore.ieee.org/document/8908733" target="_blank">Bundle Adjustment for Monocular Visual Odometry based on Detection of Traffic Signs</a>," IEEE Trans. on Vehicular Technology, 69(1):151-162, Jan. 2020.</li><li>Junchao Yang, Jiangtao Luo, De Meng and Jenq-Neng Hwang, “<a href="https://ieeexplore.ieee.org/abstract/document/8715472/" target="_blank">QoE-Driven Resource Allocation Optimized for Uplink Delivery of Delay-Sensitive VR Video over cellular Network</a>. ” 7:60672&nbsp;- 60683, IEEE Access, May 2019.</li><li>Yang Li, Xiaoyan Jiang, Jenq-Neng Hwang, “<a href="https://www.sciencedirect.com/science/article/pii/S0950705119303077" target="_blank">Effective person re-identification by self-attention model guided feature learning</a>,” Knowledge-Based Systems, vol. 187, January 2020.</li><li>Tsung-Wei Huang, Jeng-Neng Hwang, Suzanne Romain, Farron Wallace, “<a href="https://ieeexplore.ieee.org/document/8478164" target="_blank">Fish Tracking and Segmentation from Stereo Videos on the Wild Sea Surface for Electronic Monitoring of Rail Fishing</a>," IEEE Trans. on CSVT, 29(10): 3146&nbsp;- 3158, Oct. 2019.</li><li>Y Xu, H Chen, W Zhang, JN Hwang, “<a href="https://ieeexplore.ieee.org/document/8790763?source=authoralert" target="_blank">Smart Media Transport: A Burgeoning Intelligent System for Next Generation Multimedia Convergence Service over Heterogeneous Networks in China</a><a href="https://ieeexplore-ieee-org.offcampus.lib.washington.edu/document/8790763" target="_blank">,</a>” IEEE MultiMedia, 26(3):79-91, August 2019.</li><li>Li Chen, Jie Sun, Daniel S Hippe, Niranjan Balu, Quan Yuan, Isabelle Yuan, Xihai Zhao, Rui Li. Le He, Thomas S Hatsukami, Jenq-Neng Hwang, Chun Yuan,&nbsp;“<a href="https://www.sciencedirect.com/science/article/pii/S0197458019300776" target="_blank">Quantitative Assessment of the Intracranial Vasculature in an Older Adult Population using iCafe</a>,”&nbsp;Neurobiology of Aging, 79:59-65, July 2019.</li><li>Jingming Zhao, Juan Zhang, Zhi Li, Jenq-Neng Hwang, Yongbin Gao, and Zhijun Fang “<a href="https://www.sciencedirect.com/science/article/pii/S0952197619300806" target="_blank">DD-CycleGAN: Unpaired image dehazing via Double-Discriminator Cycle-Consistent Generative Adversarial network</a> . ” Special Issue on Internet of Things (IoT) for In-Vehicle Systems, journal Engineering Applications of Artificial Intelligence Engineering Applications of Artificial Intelligence (EAAI), 82:263-271, June 2019.</li><li>Gaoang Wang, Jenq-Neng Hwang, Farron Wallace and Craig S. Rose, “<a href="https://ieeexplore.ieee.org/abstract/document/8695771" target="_blank">Multi-Scale Fish Segmentation Refinement and Missing Shape Recovery</a>,” IEEE Access, 7: 52836&nbsp;- 52845, April 2019.</li><li>Li Chen, Mahmud Mossa-Basha, Jie Sun, Daniel S. Hippe, Niranjan Balu, Quan Yuan, Kristi Pimentel, Thomas S. Hatsukami,J enq-Neng Hwang, Chun Yuan “<a href="https://www.sciencedirect.com/science/article/pii/S0730725X18305381" target="_blank">Quantification of morphometry and intensity features of intracranial arteries from 3D TOF MRA using the intracranial artery feature extraction (iCafe): A reproducibility study</a>.” Magnetic Resonance Imaging, 57:293-302, April 2019.</li><li>Zheng Tang, Jenq-Neng Hwang, “<a href="https://ieeexplore.ieee.org/abstract/document/8660675" target="_blank">MOANA: An Online Learned Adaptive Appearance Model for Robust Multiple Object Tracking in 3D</a>,” IEEE Access, 7: 31934&nbsp;- 31945, March 2019.</li><li>Jounsup Park, Jeng-Neng Hwang, Philip A. Chou, “<a href="https://ieeexplore.ieee.org/abstract/document/8638765" target="_blank">Rate-Utility Optimized Streaming of Volumetric Media for Augmented Reality</a>.” Accepted by IEEE Journal on Emerging and Selected Topics in Circuits and Systems, 9(1):149&nbsp;- 162, March 2019.</li><li>Zhi Li, Juan Zhang, Zhijun Fang, Bo Huang, Xiaoyan Jiang, Yongbin Gao, Jenq-Neng Hwang, “<a href="https://ieeexplore.ieee.org/abstract/document/8645630" target="_blank">Single Image Snow Removal via Composition Generative Adversarial Networks</a>,” IEEE ACCESS,&nbsp;7:25016-25025, Feb 2019.</li><li>Zheng Tang, Yen-Shuo Lin, Kuan-Hui Lee, Jeng-Neng Hwang, Jen-Hui Chuang “<a href="https://ieeexplore.ieee.org/abstract/document/8605504" target="_blank">ESTHER: Joint Camera Self-calibration and Automatic Radial Distortion Correction from Tracking of Walking Humans</a> . ” IEEE Access, 7: J10754&nbsp;- 10766, January 2019.</li><li>Wei Huang, Lianghui Ding, Guangtao Zhai, Xiongkuo Min, Jenq-Neng Hwang, Yiling Xu, Wenjun Zhang, “<a href="https://www.sciencedirect.com/science/article/pii/S1051200418308029" target="_blank">Utility-Oriented Resource Allocation for 360-Degree Video Transmission over Heterogeneous Networks</a>.” Digital Signal Processing, Elsevier, 84(2019): 1-14, Jan. 2019.</li><li>Gaoang Wang, Jeng-Neng Hwang, Craig Rose, Farron Wallace, “<a href="https://ieeexplore.ieee.org/abstract/document/8451917" target="_blank">Uncertainty Based Active Learning via Sparse Modeling for Image Classification</a>,” IEEE Trans. on Image Processing, 28(1):316-329, Jan. 2019.</li></ol><p><br></p><p><strong>Conferences:</strong><em>&nbsp;</em></p><p><br></p><ol><li>Hsiang-Wei Huang, Pyongkun Kim, Jen-Hao Cheng, Kuang-Ming Chen, Cheng-Yen Yang, Bahaa Alattar, Yi-Ru Lin, Sangwon Kim, Kwangju Kim, Chung-I Huang, Jenq-Neng Hwang "SpatialAgent: Spatial Question Answering with LLM Agent and Perception Models," IEEE 8th International Conference on Multimedia Information Processing and Retrieval (MIPR), Bangkok, Thailand, August 2026</li><li>Hsiang-Wei Huang, Junbin Lu, Kuang-Ming Chen, Jenq-Neng Hwang, "Modeling LLM Agent Reviewer Dynamics in Elo-Ranked Review System," ACL Workshop @ Structured Understanding, Retrieval, and Generation in the LLM Era, San Diego, CA, July 2026</li><li>Haoliang Liu, CHengkun Cai, Xu Zhao, Han Zhu, Shizhou Huang, Xinglin Zhang, Tao Chen, Jenq-Neng HWang, Huaping Zhang, Lei Li, "BCL: Bayesiang in-Context Learning Framework for Information Extraction," The 64th Annual Meeting of the Association for Computational Linguistics (ACL), San Diego, CA, July 2026</li><li>Huayu Wang, Bahaa Alattar, Cheng-Yen Yang, Hsiang-Wei Huang, Jung Heon Kim, Linda Shapiro, Nathan J. White, Jenq-Neng Hwang, "Detector-in-the-Loop Tracking: Active Memory Rectification for Stable Glottic Opening Localization," Medical Imaging with Deep Learning (MIDL), Taipei, Taiwan, July 2026.</li><li>Cheng-Yen Yang,&nbsp;Hsiang-Wei Huang,&nbsp;Kuang-Ming Chen,&nbsp;Kunjun Li,&nbsp;Jenq-Neng Hwang, "Extending Segment Anything Model 2 to Multi-Object Tracking by Optimizing Hierarchical Trajectory Memory," IEEE/CVF CVPR Findings, Denver Colorado, June 2026.</li><li>Huayu Wang, Zhiwei Tan, Jia-Xian Jian, Simon Zou, Shiqi Huang, Pau-Choo Chung, Jenq-Neng Hwang, "PRISM at SignEval 2026: Privacy-Preserving Radar-Based Italian Sign Language Recognition via ConvNeXt and Ensemble Learning," IEEE/CVF CVPR 2026 Workshop on Multimodal Sign Language Recognition, Denver Colorado, June 2026.</li><li>Wei-Chieh Sun, Gyungmin Ko, Heejae Kwon, Hsiang-Wei Huang, Jenq-Neng Hwang, "Understanding Identity Continuity in Thermal Video through Scene-Level Consistency," IEEE/CVF CVPR 2026 Workshop on Subtle Visual Computing, Denver Colorado, June 2026.</li><li>Sen Jia,&nbsp;Huayu Wang,&nbsp;Hsiang-Wei Huang,&nbsp;Zhaochong An,&nbsp;Jenq-Neng Hwang,&nbsp;Zhang Huaping,&nbsp;Lei Li, "CLEP: Contrastive Language-Pose Pretraining," IEEE/CVF CVPR, Denver Colorado, June 2026.</li><li>Sen Jia,&nbsp;Ning Zhu,&nbsp;Jinqin Zhong,&nbsp;Jiale Zhou,&nbsp;Zhang Huaping,&nbsp;<a href="https://openreview.net/profile?id=~Jenq-Neng_Hwang1" target="_blank">J</a>enq-Neng Hwang,&nbsp;Lei Li, "RAM: Recover Any 3D Human Motion in-the-Wild," IEEE/CVF CVPR, Denver Colorado, June 2026.</li><li>Yunchuan Guan,&nbsp;Yu Liu,&nbsp;Ke Zhou,&nbsp;Zhiqi Shen,&nbsp;<a href="https://openreview.net/profile?id=~Jenq-Neng_Hwang1" target="_blank">J</a>enq-Neng Hwang,&nbsp;Lei Li, "Learn to Learn Weight Generation via Local Consistency Diffusion," IEEE/CVF CVPR, Denver Colorado, June 2026.</li><li>Yanting Zhang, Wujian Huang, Cairong Yan, Rui Fan, Gaoang Wang, Jenq-Neng Hwang, "FocalLink: Densely Modulated Contrastive Learning for Trajectory Assoication in Multi-Object Tracking," IEEE ICASSP, Barcelona Spain, May 2026.</li><li>Jingzhe Shi,&nbsp;Qinwei Ma,&nbsp;Hongyi Liu,&nbsp;Hang Zhao,&nbsp;Jenq-Neng Hwang,&nbsp;Lei Li, "Intrinsic Entropy of Context Length Scaling in LLMs," the 14th International Conference on Learning Representation (ICLR), Rio de Janeiro, April 2026.</li><li>Ziyang Yan,&nbsp;Yihua Shao,&nbsp;Minwen Liao,&nbsp;Siyu Chen,&nbsp;Nan Wang,&nbsp;Muyuan Lin,&nbsp;Jenq-Neng Hwang,&nbsp;Hao Zhao,&nbsp;Fabio Remondino,&nbsp;Lei Li, "3DSceneEditor: Controllable 3D Scene Editing with Gaussian Splatting," Winter Conf. on Application of Computer Vision (WACV), Tusson, Arizona, March 2026.</li><li>Niraj Prakash Kini,&nbsp;Shiau-Rung Tsai,&nbsp;Guan-Hsun Lin,&nbsp;Wen-Hsiao Peng,&nbsp;Ching-Wen Ma,&nbsp;Jenq-Neng Hwang, "milliMamba: Specular-Aware Human Pose Estimation via Dual mmWave Radar with Multi-Frame Mamba Fusion," Winter Conf. on Application of Computer Vision (WACV), Tusson, Arizona, March 2026.</li><li>Lei Li, Sen Jia, Jenq-Neng Hwang, "Multiple Human Motion Understanding," AAAI-26, Singapore, Jan. 2026</li><li>Kunjun Li, Zigeng Chen, Cheng-Yen Yang, and Jenq-Neng Hwang, "Memory-Efficient Visual Autoregressive Modeling with Scale-Aware KV Cache Compression," NeurIPS 2025, San Diego, December 2025</li><li>Ying Jin,&nbsp;Noel C Codella,&nbsp;Yanbo Xu,&nbsp;Yu Gu,&nbsp;Mu Wei,&nbsp;Haoquan Fang,&nbsp;Thomas Lin,&nbsp;Paul Vozila,&nbsp;Jenq-Neng Hwang, "QRad: Enhancing Radiology Report Generation with Captioning-to-VQA Reframing," GenAI4Health Workshop, NeurIPS 2025, San Diego, December 2025</li><li>Hsiang-Wei Huang, Pyongkun Kim, Jen-Hao Cheng, Kuang-Ming Chen, Cheng-Yen Yang, Bahaa Alattar, Yi-Ru Lin, Sangwon Kim, Kwangju Kim, Chung-I Huang, Jenq-Neng Hwang, "Warehouse Spatial Question Answering with an LLM Agent: 1st Place Solution of the 9th AI City Challenge Track 3," 9th AI City Challenge Workshop, Int'l Conf. on Computer Vision (ICCV), Honolulu, Hawaii, Oct. 2025</li><li>I-Hsiang Chen, Hua-En Chang, Wei-Ting Chen, Jenq-Neng Hwang, Sy-Yen Kuo, "Probabilistic Modeling Beyond Domain Generalization for Semantic Segmentation," Int'l Conf. on Computer Vision (ICCV), Honolulu, Hawaii, Oct. 2025</li><li>Yunchuan Guan, Yu Liu, Zhiqi Shen, Jenq-Neng Hwang, Serge Belongie, Lei Li, "Is Meta-Learning Out? Rethinking Unsupervised Few-Shot Classification with Limited Entropy," Int'l Conf. on Computer Vision (ICCV), Honolulu, Hawaii, Oct. 2025</li><li>Hsiang-Wei Huang, Wenhao Chai, Kuang-Ming Chen, Cheng-Yen Yang,, Jenq-Neng Hwang, "Token Merging with Spatial Awareness," IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025), Hangzhou, China, Oct. 2025</li><li>Zhongyu Jiang,&nbsp;Wenhao Chai,&nbsp;Lei Li,&nbsp;Zhuoran Zhou,&nbsp;Cheng-Yen Yang,&nbsp;Jenq-Neng Hwang, " UniHPR: Unified Human Pose Representation via Singular Value Contrastive Learning," IEEE 8th International Conference on Multimedia Information Processing and Retrieval (MIPR), San Jose, CA, August 2025</li><li>Cheng-Yen Yang, Hsiang-Wei Huang, Kuang-Ming Chen, Kunjun Li, Farron Wallace, Chung-I Huang, Jenq-Neng Hwang, "A Depth-Aware Robust Multi-Object Tracker for Crowded Scene by Re-Prioritizing Association Order," 21st IEEE International Conference on Advanced Visual and Signal-Based Systems, Tainan, Taiwan, August 2025</li><li>Kuang-Ming Chen, Jenq-Neng Hwang, Hung-Yi Lee, "InstructionCP: A Simple yet Effective Approach for Transferring Large Language Models to Target Languages," the&nbsp;ACL Special Interest Group on Typology (SIGTYP) Workshop, Vienna, Austria, August 2025</li><li>Chengkun Cai, Xu Zhao, Haoliang Liu, Zhongyu Jiang, Tianfang Zhang, Zongkai Wu, Jenq-Neng Hwang, Serge Belongie, Lei Li, "Bayesian Optimization for Controlled Image Editing via LLMs" the 63rd Annual Meeting of the Association for Computational Linguistics (ACL), Vienna Austria, July-August 2025</li><li>Chengkun Cai, Xu Zhao, Haoliang Liu, Zhongyu Jiang, Tianfang Zhang, Zongkai Wu, Jenq-Neng Hwang, Serge Belongie, Lei Li, "The Role of Deductive and Inductive Reasoning in Large Language Models," the 63rd Annual Meeting of the Association for Computational Linguistics (ACL), Vienna Austria, July-August 2025</li><li>Aotian Zheng, Jenq-Neng Hwang, Rania Hussein, Farron Wallace, Kelsey Magrane, Lauren Shiosaka, "Target Distribution Agnostic Domain Adaptation for in-the-Wild Image Classification under Both Domain and Label Shifts," IEEE ICME 2025, Mantes France, June-July 2025</li><li>Hsiang-Wei Huang,&nbsp;Fu-Chen Chen,&nbsp;Wenhao Chai,&nbsp;Che-Chun Su,&nbsp;Lu Xia,&nbsp;Sanghun Jung,&nbsp;Cheng-Yen Yang,&nbsp;Jenq-Neng Hwang,&nbsp;Min Sun,&nbsp;Cheng-Hao Kuo, "Zero-shot 3D Question Answering via Voxel-based Dynamic Token Compression," 2025 CVPR, Nashville TN, June 2025</li><li>Jie Deng,&nbsp;Wenhao Chai,&nbsp;Jianshu Guo,&nbsp;Qixuan Huan<a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Huang,+Q" target="_blank">g</a>,&nbsp;Junsheng Huang,&nbsp;Wenhao Hu,&nbsp;Shengyu Hao,&nbsp;Jenq-Neng Hwang,&nbsp;Gaoang Wang," CityGen: Infinite and Controllable City Layout Generation," USM3D Workshop, 2025 CVPR, Nashville TN, June 2025</li><li>Hou-I Liu,&nbsp;Christine Wu,&nbsp;Jen-Hao Cheng,&nbsp;Wenhao Chai,&nbsp;Shian-yun Wang,&nbsp;Gaowen Liu,&nbsp;Hugo Latapie,&nbsp;Jhih-Ciang Wu,&nbsp;Jenq-Neng Hwang,&nbsp;Hong-Han Shuai,&nbsp;Wen-Huang Cheng, "MonoTAKD: Teaching Assistant Knowledge Distillation for Monocular 3D Object Detection," 2025 CVPR, Nashville TN, June 2025</li><li>Lei Li,&nbsp;Sen Jia,&nbsp;wangjianhao,&nbsp;Zhongyu Jiang,&nbsp;Feng Zhou,&nbsp;Ju Dai,&nbsp;Tianfang Zhang,&nbsp;Zongkai Wu,&nbsp;Jenq-Neng Hwang, "Human Motion Instruction Tuning," 2025 CVPR, Nashville TN, June 2025</li><li>Hsiang-Wei Huang, Wenhao Chai, Kuang-Ming Chen, Cheng-Yen Yang, Jenq-Neng Hwang, "ToSA: Token Merging with Spatial Awareness," 3D-LLM/VLA Workshop, 2025 CVPR, Nashville TN, June 2025</li><li>Hsiang-Wei Huang, Wenhao Chai, Kuang-Ming Chen, Cheng-Yen Yang, Jen-Hao Cheng, Jenq-Neng Hwang, "3D Visual Grounding with Reasoning LLM," 3D-LLM/VLA Workshop, 2025 CVPR, Nashville TN, June 2025</li><li>Wenhao Chai,&nbsp;Enxin Song,&nbsp;Yilun Du,&nbsp;Chenlin Meng,&nbsp;Vashisht Madhavan,&nbsp;Omer Bar-Tal,&nbsp;Jenq-Neng Hwang,&nbsp;Saining Xie,&nbsp;Christopher D Manning, "AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark," ICLR 2025, Singapore, April 2025.</li><li>Hsiang-Wei Huang, Cheng-Yen Yang, Wenhao Chai, Zhongyu Jiang, Jenq-Neng Hwang, "MambaMOT: State-Space Model as Motion Predictor for Multi-Object Tracking," IEEE ICASSP 2025, Hyderabad, India,&nbsp;April, 2025</li><li>Ziyu Zhong, Mufan Liu, Le Yang, Yifan Wang, Yiling Xu, Jenq-Neng Hwang, "Video Streaming with Kairos: An MPC-base ABR with Streaming-Aware Through Prediction," The ACM 35th edition of the Workshop on Network and Operating System Support for Digital Audio and Video (NOSSDAV), Stellenboch, South Africa, March-April 2025.</li><li>Aotian Zheng, Jenq-Neng Hwang, Farron Wallace, Beverly Barnett, Irina Benson, Thomas Helser, Qiancheng Li, Yudong Liu, "Automatic Fish Age Prediction using Deep Machine Learning: Combining Otolith Image, NIR Spectra and Metadata Features," 3rd Workshop on Maritime Computer Vision, Winter Conf. on Application of Computer Vision (WACV), Tusson, Arizona, Feb-March 2025.</li><li>Ying Jin, Zhouran Zhou, Haoquan Fang, Jenq-Neng Hwang, "DAug: Diffusion-based Channel Augmentation for Radiology Image Retrieval and Classification," 2024 NeurIPS Advancements in Medical Foundation Models (AIM-FM) workshop, Vancouver, Canada, December 2024.</li><li>Jiacheng Sun, Hsiang-Wei Huang, Cheng-Yen Yang,<strong> </strong>Zhongyu Jiang, Jenq-Neng Hwang, "GTA: Global Tracklet Association for Multi-Object Tracking in Sports," International Workshop on Machine Learning and Computing for Visual Semantic Analysis (MLCSA), ACCV 2024, Hanoi Vietnam, Dec. 2024.</li><li>Yueh-Cheng Huang,&nbsp;Hsin-Yi Chen, Cheng-Jui Hung, Jenq-Neng Hwang, Jen-Hui Chuang, "Single-Image Driven 3D Viewpoint Training Data Augmentation for Effective Label Recognition," 27th INternational Conf. on Pattern Recognition (ICPR), Kolkata India, December 2024.</li><li>Niraj Prakash Kini,&nbsp;Ruey-Horng Shiue,&nbsp;ryan chandra,&nbsp;Wen-Hsiao Peng,&nbsp;Ching-Wen Ma,&nbsp;Jenq-Neng Hwang, “TransHuPR: Cross-View Fusion Transformer for Human Pose Estimation using mmWave Radar," British Machine Vision COnference (BMVC), Glasgow UK, November, 2024</li><li>Qing-Wen Yang,&nbsp;Kai-Wen Duan,&nbsp;Ting-Yi Lu,&nbsp;Kevin Lin,&nbsp;Cheng-Yen Yang,&nbsp;Lijuan Wang,&nbsp;Jenq-Neng Hwang,&nbsp;Shang-Hong Lai, "APTpose: Anatomy-aware Pre-training for 3D Human Pose Estimation,"," British Machine Vision COnference (BMVC), Glasgow UK, November, 2024</li><li>Jen-Hao Cheng, Sheng-Yao Kuan, Hugo Latapie, Gaowen Liu, Jenq-Neng Hwang, “CenterRadarNet: Joint 3D Object Detection and Tracking Framework using 4D FMCW Radar,” IEEE ICIP, Abu Dhabi, Oct. 2024</li><li>Yuan-Hao Ho,&nbsp;Jen-Hao Cheng, Sheng Yao Kuan, Zhongyu Jiang, Wenhao Chai,&nbsp;Hsiang-Wei Huang, Jenq-Neng Hwang, Chih-Lung Lin, "RT-Pose: A 4D Radar-Tensor based 3D Human Pose Estimation and Localization Benchmark," European Conference on Computer Vision (ECCV), Milan Italy, Sept-Oct, 2024</li><li>Hsiang-Wei Huang, Jiacheng Sun, Cheng-Yen Yang, Zhongyu Jiang, Li Yu Huang, Jenq-Neng Hwang, Yu Ching Yeh, "ToddlerAct: A Toddler Action Recognition Dataset for Gross Motor Development Assessment," the 7th Workshop and Competition on Affective Behavior Analysis in-the-wild, Conference on Computer Vision (ECCV), Milan Italy, Sept-Oct, 2024</li><li>Mufan Liu, Le Yang, Yiling Xu, Ye-Kui Wang, Jenq-Neng Hwang, "EVAN: Evolutional Video Streaming Adaptation via Neural Representation," IEEE ICME, Niagra Falls, Canada, July 2024</li><li>Cheng-Yen Yang, Hsiang-Wei Huang&nbsp;, Pyong-Kun Kim&nbsp;, Zhongyu Jiang, Kwang-Ju Kim, ChungI Huang, Haiqing Du, Jenq-Neng Hwang, "An Online Approach and Evaluation Method for Tracking People Across Cameras in Extremely Long Video Sequence," AI City Challenge 2024 CVPR Workshop, IEEE/CVF CVPR 2024, Seattle, June 2024</li><li>Enxin Song, Wenhao Chai, Guanhong Wang, Haoyang Zhou, Feiyang Wu, Yucheng Zhang, <em>&nbsp;Tian Ye, Haozhe Chi, Xun Guo, Yanting Zhang, Yan Lu, Jenq-Neng Hwang, Gaoang Wang,</em> "Dense Token to Sparse Memory for Long Video Understanding," IEEE/CVF CVPR 2024, Seattle, June 2024</li><li>Ziyu Shan, Yujie Zhang, Qi Yang, Haichen Yang, Yiling Xu, Jenq-Neng Hwang, Xiaozhong Xu, Shan Liu, <em>&nbsp;"</em>Contrastive Pre-Training with Multi-View Fusion for No-Reference Point Cloud Quality Assessment," IEEE/CVF CVPR 2024, Seattle, June 2024</li><li>Sheng Yao Kuan, Jen-Hao Cheng, Hsiang-Wei Huang, Wenhao Chai, Cheng-Yen Yang, Bing-Fei Wu, Jenq-Neng Hwang, "Boosting Online 3D Multi-Object Tracking through Camera-Radar Cross Check," 35th IEEE Intelligent Vehicles Symposium (IV), Jeju Island, Korea, June 2024.</li><li>Yizhou Wang, Jen-Hao Cheng, Jui-Te Huang, Sheng Yao Kuan, Qiqian Fu, Chiming Ni, Shengyu Hao, Gaoang Wang, Jenq-Neng Hwang, "Vision meets mmWave Radar: 3D Object Perception Benchmark for Autonomous Driving," 35th IEEE Intelligent Vehicles Symposium (IV), Jeju Island, Korea, June 2024.</li><li>Zhongyu Jiang, Haorui Ji, Cheng-Yen Yang, Jenq-Neng Hwang, "2D Human Pose Estimation Calibration and Keypoint Visibility Classification," IEEE ICASSP 2024, Seoul, Korea, April 2024</li><li>Jie Mei, Jenq-Neng Hwang, "ESA: Expert-and-Samples-Aware Incemental Learning under Longtail Distribution," IEEE ICASSP 2024, Seoul, Korea, April 2024</li><li>Cheng-Yen Yang, Hsiang-Wei Huang, Zhongyu Jiang, Hao Wang, Farron Wallace, Jenq-Neng Hwang, "A&nbsp;Density-Guided Temporal Attention Transformer for Indiscernible Object Counting in Underwater Videos," IEEE ICASSP 2024, Seoul, Korea, April 2024</li><li>Meiqi Sun, Zhonghan Zhao, Wenhao Chai, Hanjun Luo, Shidong Cao, Yanting Zhang, Jenq-Neg Hwang, Gaoang Wang, "UniAp: Toward Universal Animal Perception in Vision via Few Shot Learning," the 38th AAAI Conference on Artificial Intelligence (AAAI-24), Vancouver Canada, Feb. 2024,</li><li><em>Zhongyu</em> Jiang, Zhouran Zhou, Lei Li, Wenhao Chai, Cheng-Yen Yang, Jenq-Neng Hwang, "Back to Optimization: Diffusion-based Zero-Shot 3D Human Pose Estimation," IEEE/CVF WACV 2024, Waikoloa Hawaii, Jan. 2024</li><li>Cheng-Yen Yang, Hsiang-Wei Huang, Zhhongyu Jiang, Heng-Cheng Kuo, Jie Mei, ChungI Huang, Jenq-Neng Hwang, "Sea You Later: Metadata-Guided Long-Term Re-Identification for UAV-Based Multi-Object Tracking," 2nd Workshop on Maritime Computer Vision, IEEE/CVF WACV 2024, Waikoloa Hawaii, Jan. 2024</li><li>Zhouran Zhou, Zhongyu Jiang, Wenhao Chai, Cheng-Yen Yang, Lei Li and Jenq-Neng Hwang, "Efficient Domain Adaptation via Generative Prior for 3D Infant Pose Estimation," Workshop on Computer Vision with Small Data: A Focus on Infants and Endangered Animals, IEEE/CVF WACV 2024, Waikoloa Hawaii, Jan. 2024</li><li>Hsiang-Wei Huang, Cheng-Yen Yang, Jiacheng Sun, Jenq-Neng Hwang, Pyong-Kun Kim, Kwang-Ju Kim, Kyoungoh Lee, ChungI Huang, "Iterative Scale-Up ExpansionIoU and Deep Features Association for Multi-Object Tracking in Sports," 4th workshop on Real-World Surveillance: Applications and Challenges, IEEE/CVF WACV 2024, Waikoloa Hawaii, Jan. 2024</li><li>Jie Mei, AJ Piergiovanni, Jenq-Neng Hwang and Wei Li, "SLVP: Self-supervised Language-Video Pre-training for Referring Video Object Segmentation," 2nd Workshop on Pretraining, IEEE/CVF WACV 2024, Waikoloa Hawaii, Jan. 2024</li><li>Shuting Xia,&nbsp;Tingyu Fan,&nbsp;Yiling Xu,&nbsp;Jenq-Neng Hwang,&nbsp;Zhu Li, "Learning Dynamic Point Cloud Compression via Hierarchical Inter-Frame Block Matching," 2023 ACM Multimedia, Ottawa, Oct-Nov 2023.</li><li>Wenhao Chai, Zhongyu Jiang, Jenq-Neng Hwang, Gaoang Wang, "Global Adaptation Meets Local Generalization: Unsupervised Domain Adaptation for 3D Human Pose Estimation," Int'l Conference on Computer Vision, Paris, France, Oct. 2023</li><li>Ying Jin, Yinpeng Chen, Jianfeng Wang, Lijuan Wang, Jenq-Neng Hwang, Zicheng Liu, "Zero-shot Human-Object Interaction (HOI) Classification by Bridging Generative and Contrastive Image-Language Models," Int'l Conference on Image Processing, Kuala Lumpur, Malaysia, Oct. 2023</li><li>Aotian Zheng, Jie Mei, Farron Wallace, Craig Rose, Rania Hussein, Jenq-Neng Hwang, "Progressive Mixup Augmented Teacher-Sudent Learning For Unsupervised Domain Adaptation," Int'l Conference on Image Processing, Kuala Lumpur, Malaysia, Oct. 2023</li><li>Cheng-Yen Yang, Alan Yu Shyang Tan, Melanie Underwood, Charlotte Bodie, Zhongyu Jiang, Steve George, Karl Warr, Jenq-Neng Hwang, Emma Jones, "Multi-Object Tracking By Iteratively Associating Detections with Uniform Appearance for Trawl-Based Fishing Bycatch Monitoring," Int'l Conference on Image Processing, Kuala Lumpur, Malaysia, Oct. 2023</li><li>Hsiang-Wei Huang, Cheng-Yen Yang, Zhongyu Jiang, Pyong-Kun Kim, Kyoungoh Lee, Kwangju Kim, Samartha Ramkumar, Chaitanya Mullapudi, In-Su Jang, Chung-I Huang, Jenq-Neng Hwang, "Enhancing Multi-Camera Tracking with Anchor-Guided Clustering and Spatio-Temporal Consistency ID Re-Assignment," 7th AI City Challenge Workshop (AICity), IEEE/CVF CVPR, Vancouver Canada, June 2023</li><li>Cheng-Yen Yang, Jiajia Luo, Lu Xia, Yuyin Sun, Ke Zhang, Nan Qiao, Zhongyu Jiang, Jenq-Neng Hwang, Cheng-Hao Kuo, "CameraPose: Weakly-Supervised Monocular 3D Human Pose Estimation by Leveraging In-the-wild 2D Annotations," Winter Conference on Applications of Computer Vision 2023, Waikoloa, Hawaii, Jan. 2023</li><li>Shih-Po Lee, Niraj Prakash Kini, Wen-Hsiao Peng, Ching-Wen Ma, Jenq-Neng Hwang, "HuPR: A Benchmark for Human Pose Estimation Using Millimeter Wave Radar," Winter Conference on Applications of Computer Vision 2023, Waikoloa, Hawaii, Jan. 2023</li><li>Hsiang-Wei Huang, Cheng-Yen Yang, Samartha Ramkumar, Jenq-Neng Hwang, Pyong-Kun Kim, Kyoungho Lee, Kwangju Kim, Chung-I Huang, "Observation Centric and Central Distance Recovery for Athlete Tracking," 2nd Workshop on Computer Vision for Winter Sports, Winter Conference on Applications of Computer Vision 2023, Waikoloa, Hawaii, Jan. 2023</li><li>Haotian Zhang, Pengchuan Zhang, Xiaowei Hsu, Yen-Chun Chen,&nbsp;Liunian Harold Li, Xiyang Dai, Lijuan Wang, Lu Yuan, Jenq-Neng Hwang, Jianfeng Gao, "GLIPv2: Unifying Localization and Vision-Language Understanding," NeurlPS 2022, New Orleans, November-December 2022</li><li>Jie Mei, Suzanne Romain, Craig Rose, Kelsey Magrane, Jenq-Neng Hwang, "HCIL: Hierarchical Class Incremental Learning for Longline Fishing Visual Monitoring," IEEE Int'l Conf. on Image Processing (ICIP 22), Bordeaux, France, 16-19 October 2022</li><li>Hung-Min Hsu, Yizhou Wang, Cheng-Yen Yang, Jenq-Neng Hwang, Hoang Le Uyen Thuc, Kwang-Ju Kim, "GaitTAKE: Gait Recognition by Temporal Attention and Keypoint-guided Embedding," IEEE Int'l Conf. on Image Processing (ICIP 22), Bordeaux, France, 16-19 October 2022</li><li>Zheng Li, Caili Guo, Zerun Feng, Jenq-Neng Hwang, Xijun Xue, "Multi-View Visual Semantic Embedding," the 31st International Joint Conference on Artificial Intelligence (IJCAI-22), Vienna Austria, July 2022</li><li>Zhongyu Jiang, Haorui Ji, Samuel Menaker, Jenq-Neng Hwang, "GolfPose: Golf Swing Analyses with A Monocular Camera based Human Pose Estimatio," Artificial Intelligence on Sports WOrkshop, IEEE ICME, July 2022</li><li>Jie Mei, Jingxi Yu, Suzanne Romain, Craig Rose, Kelsey Magrane, Graeme Leeson, Jenq-Neng Hwang, ",Unsupervised Severely Deformed Mesh Reconstruction (DMR) from a Single-View Image for Longline Fishing" 3D Multimedia Analytics, Search and Generation, IEEE ICME, July 2022</li><li>Cheng-Yen Yang, Zhong-Yu Jiang, Shih-Yu Gu, Jenq-Neng Hwang, Jang-Hee Yoo, “Unsupervised Domain Adaptation Learning for Infant Pose Recognition with Synthetic Data,” IEEE ICME, Taipei, July 2022</li><li>Liunian Harold Li, Pengchuan Zhang, Haotian Zhang, Jianwei Yang, Chunyuan Li, Yiwu Zhong, Lijuan Wang, Lu Yuan, Lei Zhang, Jenq-Neng Hwang, Kai-Wei Chang, Jianfeng Gao, "Grounded Language-Image Pre-training," IEEE/CVF CVPR, New Orleans, June 19-24, 2022</li><li>Jiarui Cai, Yizhou Wang, Hung-Min Hsu, Jenq-Neng Hwang, Kelsey Magrane, Craig Rose, "LUNA: Localizing Unfamiliarity Near Acquaintance for Open-set Long-Tailed Recognition," Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI-22), Vancouver BC, Canada, Feb22 - March 1, 2022</li><li>Hung-Min Hsu, Yizhou Wang, Jiarui Cai and Jenq-Neng Hwang, "Multi-Target Multi-Camera Tracking of Vehicles by Graph Auto-Encoder and Self-Supervised Camera Link Model," Real-World Surveillance: Applications and Challenges (RWS) Workshop, IEEE/CVF WACV 2022, Jan. 4-8, 2022, Hawaii</li><li>Jiarui Cai, Yizhou Wang, Hung-Min Hsu, Haotian Zhang and Jenq-Neng Hwang, "DIOR: DIstill Observations to Representations for Multi-Object Tracking and Segmentation," Real-World Surveillance: Applications and Challenges (RWS) Workshop, IEEE/CVF WACV 2022, Jan. 4-8, 2022, Hawaii</li><li>Gaoang Wang, Renshu Gu, Zhozhu Liu, Weijie Hu, Mingli Song, Jenq-Neng Hwang, "Track without Appearance: Learn Box and Tracklet Embedding with Local and Global Motion Patterns for Vehicle Tracking," ICCV 2021, Oct. 11-17, 2021</li><li>Haotian Zhang, Haorui Ji, Aotian Zheng, Ren-Hung Hwang, Jenq-Neng Hwang, "Monocular 3D Localization of Vehicles in Road Scenes," the 2nd Autonomous Vehicle Vision Workshop, ICCV 2021, Oct. 11-17, 2021</li><li>Jiarui Cai, Yizhou Wang, Jenq-Neng Hwang, "ACE: Ally Complementary Experts for Solving Long-Tailed Recognition in One-Shot," ICCV 2021, Oct. 11-17, 2021</li><li>Li Chen, Wenjin Liu, Niranjan Balu, Thomas S. Hatsukami, Jenq-Neng Hwang, Chun Yuan, "Deep Open Snake Tracker for Vessel Tracing," MICAAI 2021, Strasbourg, France, Sept. 27-Oct. 1, 2021</li><li>Aotian Zheng, Henry Yu, Jenq-Neng Hwang, Simegnew Alaba, Ahmed Iftekhar, John Ball, Matthew Campbell, Jack Prior, James Primrose, Farron Wallace, "SEAMAPD21: a large-scale reef fish dataset for fine-grained categorization," selected highlighted paper in the 3rd NOAA workshops on Leveraging AI in Environmental Sciences, September 13-17, 2021.</li><li>Yizhou Wang, Jenq-Neng Hwang, Gaoang Wang, Hui Liu, Kwangju Kim, Hung-Min Hsu, Jiarui Cai, Haotian Zhang, Zhongyu Jiang, Renshu Gu, "ROD2021 Challenge: A Summary for Radar Object Detection Challenge for Autonomous Driving Applications," ACM International Conference on Multimedia Retrieval (ICMR 2021), Taipei, Taiwan, August 21-24, 2021</li><li><em>Yu-Shu Ni, Chia-Chi Tsai, Bo-Xun Wu, Jia-Jheng Lin, Jen Shuo Chang, Po-Chi Hu, Ted T. Kuo, Jenq-Neng Hwang, Po-Yu Chen, Hsienkai Kuo, and Jiun-In Guo, "</em>Summary on The 2021 Embedded Deep Learning Object Detection Model Compression Competition for Traffic in Asian Countries," ACM International Conference on Multimedia Retrieval (ICMR 2021), Taipei, Taiwan, August 21-24, 2021</li><li>Cheng-Yen Yang, Hung-Min Hsu, Jiarui Cai, Jenq-Neng Hwang, "Long-Tailed Recognition for SAR Aerial View Object by Cascading and Paralleling Experts," 2021 New Trends in Image Restoration and Enhancement (NITRE) workshop and challenges on image and video processing, CVPR, June 2021.</li><li>Yizhou Wang, Gaoang Wang, Hung-Min Hsu, Hui Liu, Jenq-Neng Hwang, "Rethinking of Radar's Role: A Camera-Radar Dataset and Systematic Annotator via Coordinate Alignment," 2021 Workshop on Autonomous Driving, CVPR, June 2021</li><li>Yanting Zhang, Aotian Zheng, Ke Han, Yizhou Wang, Jenq-Neng Hwang, “Vehicle 3D Localization in Road Scenes via a Monocular Moving Camera,” IEEE ICASSP 2021, Toronto, Ontario, Canada, June 2021</li><li>Jie Mei, Jenq-Neng Hwang, Suzanne Romain, Craig Rose, Braden Moore, Kelsey Magrane, “Absolute 3D Pose Estimation and Length Measurement of Severely Deformed Fish from Monocular Videos in Longline Fishing,” IEEE ICASSP 2021, Toronto, Ontario, Canada, June 2021</li><li>Zhongyu Jiang, Jianxiong Zhou, Jang-Hee Yoo, Jenq-Neng Hwang, “Hierarchical Pose Classification for Infant Action Analysis and Mental Development Assessment,” IEEE ICASSP 2021, Toronto, Ontario, Canada, June 2021</li><li>Jie Mei, Jenq-Neng Hwang, Suzanne Romain, Craig Rose, Braden Moore, Kelsey Magrane, "<a href="https://www.springerprofessional.de/video-based-hierarchical-species-classification-for-longline-fis/18891454" target="_blank">Video-based Hierarchical Species Classification for Longline Fishing Monitoring</a>,” the 4th Computer Vision for Automated Analysis of Underwater Imagery Workshop (CVAUI), ICPR 2020, Milan Italy, Jan. 2021</li><li>Hung-min Hsu, Jenq-Neng Hwang, Andrew Berdahl, "<a href="https://www.springerprofessional.de/en/robust-fish-enumeration-by-multiple-object-tracking-in-overhead-/18891456" target="_blank">Robust Fish Enumeration by Multiple Object Tracking in Overhead Videos</a>,” the 4th Computer Vision for Automated Analysis of Underwater Imagery Workshop (CVAUI), ICPR 2020, Milan Italy, Jan. 2021</li><li>Renshu Gu, Gaoang Wang, Jenq-Neng Hwang, "<a href="https://arxiv.org/pdf/2011.00184.pdf" target="_blank">Exploring Severe Occlusion: Multi-Person 3D Pose Estimation with Gated Convolution</a>," 2020 International Conference on Pattern Recognition (ICPR), Milan Italy, Jan. 2021</li><li>Bicao Li, Zhoufeng Liu, Shan Gao, Jenq-Neng Hwang, Jun Sun, Zongmin Wang<em>, </em>"<a href="https://ailb-web.ing.unimore.it/icpr/author/4346" target="_blank">CSpA-DN: Channel and Spatial Attention Dense Network for Fusing PET and MRI Images</a>," 2020 International Conference on Pattern Recognition (ICPR), Milan Italy, Jan. 2021</li><li>Yizhou Wang, Zhongyu Jiang, Xiangyu Gao, Jenq-Neng Hwang, Guanbin Xing, and Hui Liu, "<a href="https://openaccess.thecvf.com/content/WACV2021/papers/Wang_RODNet_Radar_Object_Detection_Using_Cross-Modal_Supervision_WACV_2021_paper.pdf" target="_blank">RODNet: Radar Object Detection using Cross-Modal Supervision</a>," CVF/IEEE WACV, Hawaii, Jan. 2021.</li><li>Hung-Min Hsu, Yizhou Wang, Jenq-Neng Hwang, <a href="https://paperswithcode.com/paper/traffic-aware-multi-camera-tracking-of" target="_blank">"Traffic-AwareMulti-CameraTracking of Vehicles Based on ReID and Camera Link Model,"</a> ACM Multimedia 2020, Seattle, Oct 12-16, 2020</li><li>Li Chen, Jenq-Neng Hwang, Thomas Hatsukami, and Chun Yuan, "<a href="https://link.springer.com/chapter/10.1007/978-3-030-59725-2_8" target="_blank">Automated Intracranial Artery Labeling using a Graph Neural Network and Hierarchical Refinement</a>," the 23rd&nbsp;International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), October 4-8, Lima Peru.</li><li>Li Chen, Duygu Baylam Geleri, Jie Sun, Hiroko Watase, Jiarui Cai, Yin Guo, Niranjan Balu, Dongxiang Xu, Thomas Hatsukami, Yongjun Wang, Jenq-Neng Hwang, and Chun Yuan, "<a href="http://clatfd.cn/thinkcmfx/data/upload/ueditor/20200324/5e798e241ebf3.pdf" target="_blank">Multi-planar, multi-contrast and multi-timepoint analysis tool (MOCHA) for intracranial vessel wall imaging review</a>," International Society for Magnetic Resonance in Medicine (ISMRM) annual meeting, Paris, August 2020</li><li>Yanting Zhang, Yonggang Qi, Jie Yang, Jenq-Neng Hwang, "<a href="https://ieeexplore.ieee.org/document/9102896" target="_blank"> Improved Traffic Sign Detection in Videos through Reasoning Effective RoI Proposals</a>," IEEE International Conf. on Multimedia Expo (ICME), London UK, July 2020</li><li>Chia-Chi Tsai, Yong-Hsiang Yang, Hung-Wei Lin, Bo-Xun Wu, En Chih Chang, Hung Yu Liu, Jhih-Sheng Lai, Po Yuan Chen, Jia-Jheng Lin, Jen Shuo Chang, Li-Jen Wang, Ted T. Kuo, Jenq-Neng Hwang, and Jiun-In Guo<em>, "</em><a href="https://ieeexplore.ieee.org/document/9106010" target="_blank">The 2020 Embedded Deep Learning Object Detection Model Compression Competition for Traffic in Asian Countries</a>," IEEE International Conf. on Multimedia Expo (ICME), London UK, July 2020</li><li>Jiarui Cai, Yizhou Wang, Haotian Zhang, Hung-Min Hsu, Chengqian Ma, Jenq-Neng Hwang, "<a href="https://motchallenge.net/workshops/bmtt2020/papers/IA-MOT.pdf" target="_blank">IA-MOT: Instance-Aware Multi-Object Tracking with Motion Consistency</a>," 5th BMTT MOTChallenge Workshop in CVPR 2020: Multi-Object Tracking and Segmentation, June 19, 2020, Seattle, WA, USA</li><li>Haotian Zhang, Yizhou Wang, Jiarui Cai, Hung-Min Hsu, Haorui Ji, Jenq-Neng Hwang, "<a href="https://motchallenge.net/workshops/bmtt2020/papers/LIFTS.pdf" target="_blank">LIFTS: Lidar and Monocular Image Fusion for Multi-Object Tracking and Segmentation</a>," 5th BMTT MOTChallenge Workshop in CVPR 2020: Multi-Object Tracking and Segmentation, June 19, 2020, Seattle, WA, USA</li><li>Gaoang Wang, Yizhou Wang, Haotian Zhang, Renshu Gu, Jenq-Neng Hwang, “ <a href="https://dl.acm.org/doi/10.1145/3343031.3350853" target="_blank">Exploit the Connectivity: Multi-Object Tracking with TrackletNet </a>, ” ACM Multimedia Conference (ACMMM), Nice, France, October 21-25, 2019,"</li><li>Yizhou Wang, Yen-Ting Huang, Jenq-Neng Hwang, “ <a href="https://dl.acm.org/doi/10.1145/3343031.3350924" target="_blank">Monocular Visual Object 3D Localization in Road Scenes</a> , ” ACM Multimedia Conference (ACMMM), Nice, France, October 21-25, 2019</li><li>Haotian Zhang, Gaoang Wang, Zhichao Lei, Jenq-Neng Hwang, “ <a href="https://dl.acm.org/doi/10.1145/3343031.3350933" target="_blank">Eye in the Sky: Drone-Based Object Tracking and 3D Localization</a> , ” ACM Multimedia Conference (ACMMM), Nice, France, October 21-25, 2019</li><li>Yanting Zhang, Jie Yang, Haotian Zhang, Jenq-Neng Hwang, “<a href="https://ieeexplore.ieee.org/document/8803563" target="_blank">Bundle Adjustment for Monocular Visual Odometry based on Detected Traffic Sign Features</a>, ” IEEE International Conference on Image Processing (ICIP), Taipei, Taiwan, September 22-25, 2019</li><li>Tsung-Wei Huang, Jenq-Neng Hwang, Suzanne Romain, Farron Wallace, “ <a href="https://ieeexplore.ieee.org/document/8803592" target="_blank">Recognizing Fish Species Captured Live on Wild Sea Surface in Videos by Deep Metric Learning with A Temporal Constraint,</a> ” IEEE International Conference on Image Processing (ICIP), Taipei, Taiwan, September 22-25, 2019</li><li>Anjie Wang, Yongbin Gao, Zhijun Fang, Xiaoyan Jiang, Shanshe Wang, Siwei Ma, Jenq-Neng Hwang, "<a href="https://ieeexplore.ieee.org/document/8784784" target="_blank">Unsupervised Learning of Depth and Ego-Motion with Spatial-Temporal Geometric Constraints</a>," IEEE International Conference on Multimedia and Expo (ICME), July 2019</li><li>Zheng Tang, Milind Naphade, Ming-Yu Liu, Xiaodong Yang, Stan Birchfield, Shuo Wang, Ratnesh Kumar, David Anastasiu, Jenq-Neng Hwang, “<a href="http://openaccess.thecvf.com/content_CVPR_2019/html/Tang_CityFlow_A_City-Scale_Benchmark_for_Multi-Target_Multi-Camera_Vehicle_Tracking_and_CVPR_2019_paper.html" target="_blank">CityFlow: ACity-Scale Benchmark for Multi-Target Multi-Camera Vehicle Tracking and Re-Identification</a>,” IEEE/CVF Computer Vision and Pattern Recognition (CVPR) Conference, Long Beach, California, June 16-20, 2019.</li><li>Hung-Min Hsu, Tsung-Wei Huang, Gaoang Wang, Jiarui Cai, Zhichao Lei, and Jenq-Neng Hwang, “<a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/AI%20City/Hsu_Multi-Camera_Tracking_of_Vehicles_based_on_Deep_Features_Re-ID_and_CVPRW_2019_paper.pdf" target="_blank">Multi-Camera Tracking of Vehicles based on Deep Features Re-ID and Trajectory-Based Camera Link Models</a>,” AI City Challenge Workshop, IEEE/CVF Computer Vision and Pattern Recognition (CVPR) Conference, Long Beach, California, June 16-20, 2019.</li><li>Tsung-Wei Huang, Jiarui Cai, Hao Yang, Hung-Min Hsu, and Jenq-Neng Hwang, “<a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/AI%20City/Huang_Multi-View_Vehicle_Re-Identification_using_Temporal_Attention_Model_and_Metadata_Re-ranking_CVPRW_2019_paper.pdf" target="_blank">Multi-View Vehicle Re-Identification using Temporal Attention Model and Metadata Re-Ranking,</a>” AI City Challenge Workshop, IEEE/CVF Computer Vision and Pattern Recognition (CVPR) Conference, Long Beach, California, June 16-20, 2019.</li><li>Gaoang Wang, Xinyu Yuan, Aotian Zhang, Hung-Min Hsu, and Jenq-Neng Hwang, “<a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/AI%20City/Wang_Anomaly_Candidate_Identification_and_Starting_Time_Estimation_of_Vehicles_from_CVPRW_2019_paper.pdf" target="_blank">Anomaly Candidate Identification and Starting Time Estimation of Vehicles from Traffic Videos</a>,” AI City Challenge Workshop, IEEE/CVF Computer Vision and Pattern Recognition (CVPR) Conference, Long Beach, California, June 16-20, 2019.</li><li>Renshu Gu, Gaoang Wang and Jenq-Neng Hwang “<a href="https://ieeexplore.ieee.org/abstract/document/8695392" target="_blank">Efficient Multi-Person Hierarchical 3D Pose Estimation for Autonomous Driving</a>,” IEEE Multimedia Information Processing and Retrieval (MIPR 2019), San Jose, California, March 28-30, 2019.</li><li>Yaqing Wang, Chunyan Feng, Caili Guo, Yunfei Chu and Jenq-Neng Hwang “<a href="https://dl.acm.org/citation.cfm?id=3290973" target="_blank">Solving the Sparsity Problem in Recommendations via Cross-Domain Item Embedding Based on Co-clustering</a>,” 12th ACM International Conf. on Web Search and Data Mining (WSDM), Melbourne, Australia, Feb. 11-15, 2019.</li></ol>
+
+					<!-- Make your Publications section changes above this line -->
+
+				</div>
+				<!-- this_is_the_end_of_section_4 -->
+
+				<!-- this_is_the_start_of_section_5 -->
+				<h2 class="js-accordion__header">Students</h2>
+				<div class="js-accordion__panel">
+
+					<!-- Make your Students section changes below this line -->
+
+					<p><strong><em>﻿</em></strong><em>﻿</em><strong><em>Recent Graduated Ph.D. Students</em></strong></p><p><br></p><ol><li>Hsiang-Wei Huang, "Building Multimodal AI Systems for Perceiving and Reasoning in 3D Space," June 2026 (Amazon, Robotic Intelligence, Seattle)</li><li>Ying Jin, "Crossing the Chasm: Bridging Perception and Generative Models for Enhanced Vision Language Understanding," Janurary 2026 (Microsoft Research, Redmond)</li><li>Cheng-Yen Chris Yang, "Generalizable Object Tracking in Complex Real-World Scenes with Contextual Cues and Memory," January 2026 (Metropolis, NVidia, Santa Clara)</li><li>Zhongyu Jiang,Towards Robust and Effective Human Pose Estimation and Generation," March 2025 (Machine Learning Engineer, Apple, Cupertino, CA)</li><li>Jie Mei, "Continual Learning of Object Classification in the Real World," June 2024 (Google Deep Mind, Mountain View, CA)</li><li>Haotian Zhang, "Inferring the 3D Information from the Outside World Using Monocular Cameras," December 2022 (Cosmos, NVidia, Santa Clara)</li><li>Yizhou Wang, "Object 3D Perception via Camera-Radar Cross-Modality Learning for Autonomous Driving," December 2022 (Deep Learning, NVidia, Santa Clara, CA)</li><li>Jiarui Cai, "Toward Visual Recognition in the Wild," June 2022 (Rapids Data Science, NVidia, Virginia)</li><li>Li Chen, "Feature extraction and quantification to explore human vasculature," August 2021 (Philips Research, Boston)</li><li>Renshu Gu, "Towards Multi-Person 3D Pose Estimation in Natural Videos," June 2020 (Hangzhou Dianzi University, Hanzhou).</li><li>Tsung-Wei Huang, “Automatic Video Analysis for Electronic Monitoring of Fishery Activities,” September 2019 (Dolby Lab, San Francisco)</li><li>Gaoang Wang, “Vision based Analysis in Fishery Applications,” June 2019 (Zhejiang University-University of Illinois at Urbana-Champaign Institute (ZJUI), Hanzhou)</li><li>Zheng Tang, “Robust Video Object Tracking via Camera Self-Calibration,” June 2019 (Metropolis, NVidia, Santa Clara)</li><li>Jounsup Park, "Cross-Layer Optimization of Wireless Video Multicast Systems " June 2018 (Korean Aerospace University, Goyang, South Korea)</li><li>Younggun Lee, “Robust Video Object Tracking in Distributed Camera Network,” December 2017. (Korean Air Force Academy, Chungbuk, South Korea)</li><li>Xiang Chen, " Scalable Video Networking over MIMO and Multi-RAT Systems," December 2015. (Amazon Advertizing, Seattle)</li><li>Kuan-Hui Lee, "On-Road Pedestrian Tracking across Multiple Driving Recorders,” December 2015. (Deep Learning, Self-Driving, Rivian, San Jose CA)</li><li>Meng-Che David Chuang, " Automatic Video Analysis for Fishery Survey Systems, " June 2015. (Machine Learning, Brightloom, Seattle)</li><li>Po-Han Wu, " Visual-Quality-Driven Video Networking over 4G Wireless Broadband, " May 2014. (T-Mobile USA, Bellevue)</li><li>Shian-Ru Ke, “Recognition of Human Actions based on 3D Pose Estimation via Monocular Video Sequences,” March 2014. (Apple, Cupertino)</li><li>Chun-Te Chu, "Robust and Consistent Human Tracking within Camera and Across Multiple Cameras, " June 2013 (Google, Seattle)</li></ol>
+
+					<!-- Make your Students section changes above this line -->
+
+				</div>
+				<!-- this_is_the_end_of_section_5 -->
+
+            <!--                                                           -->
+            <!--                    CUSTOM CONTENT                         -->
+            <!--                                                           -->
+				<!--  If you want to add one or more custom sections, use the  -->
+				<!--  example code below. Otherwise feel free to delete it.    -->
+            <!--                                                           -->
+            <!--  If you need more than one custom section, just make a    -->
+            <!--  duplicate all the code which falls between this set of   -->
+            <!--  comments and the "END OF CUSTOM CONTENT" comments        -->
+            <!--                                                           -->
+
+				<!-- section_6_has_been_exorcised -->
+
+				<!-- section_7_has_been_exorcised -->
+
+            <!--                                                           -->
+            <!--                END OF CUSTOM CONTENT                      -->
+            <!--                                                           -->
+
+			</div>
+		</div>
+
+<!-- TemplateEndEditable -->
+	    </div>
+
+	</main>
+
+    <div role="contentinfo" class="uw-footer">
+
+        <nav role="navigation" aria-label="social networking">
+            <span>Connect with ECE: </span>
+            <ul class="footer-social">
+                <li><a class="facebook" href="https://www.facebook.com/uwece">Facebook</a></li>
+                <li><a class="twitter" href="https://twitter.com/uw_ece">Twitter</a></li>
+                <li><a class="instagram" href="https://instagram.com/uw_ece">Instagram</a></li>
+                <li><a class="youtube" href="https://youtube.com/c/UWECEmedia">YouTube</a></li>
+                <li><a class="linkedin" href="https://www.linkedin.com/company/uwece">LinkedIn</a></li>
+            </ul>
+        </nav>
+
+        <a href="http://www.washington.edu" class="footer-wordmark">University of Washington</a>
+
+        <a href="http://www.washington.edu/boundless/"><h3 class="be-boundless">Be boundless</h3></a>
+
+        <nav role="navigation" aria-label="footer links">
+            <ul class="footer-links">
+                <li><a href="http://www.uw.edu/accessibility">Accessibility</a></li>
+                <li><a href="http://uw.edu/home/siteinfo/form">Contact Us</a></li>
+                <li><a href="http://www.washington.edu/safety">Campus Safety</a></li>
+                <li><a href="http://myuw.washington.edu/">My UW</a></li>
+                <li><a href="http://www.washington.edu/online/privacy/">Privacy</a></li>
+                <li><a href="http://www.washington.edu/online/terms/">Terms</a></li>
+            </ul>
+        </nav>
+
+        <p>&copy; UW Electrical &amp; Computer Engineering  |  Seattle, WA</p>
+
+	</div>
+
+
+	</div><!-- #uw-container-inner -->
+
+	</div><!-- #uw-container -->
+
+
+<script type='text/javascript' src='/wp-cruft/wp-includes/js/wp-embed.min.js?ver=4.9.7'></script>
+
+<script type="text/javascript">
+
+ viewportUnitsBuggyfill.refresh();
+if ( navigator.userAgent.match(/(iPod|iPhone|iPad)/)
+ && navigator.userAgent.match(/AppleWebKit/)
+ && navigator.userAgent.match(/OS [1-7]/)){
+    console.log("It's an old iOS version. Falling back.")
+    var dlos71 = document.getElementById('dlos7');
+    dlos71.parentNode.removeChild(dlos71);
+    var dlos72 = document.getElementById('dlos72');
+    dlos72.parentNode.removeChild(dlos72);
+
+ }
+</script>
+</body>
+</html>

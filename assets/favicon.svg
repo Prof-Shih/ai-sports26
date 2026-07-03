@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">IEEE</title>
+  <rect width="64" height="64" rx="12" fill="#0B0F12"/>
+  <g fill="none" stroke="#00A6D6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 8 56 32 32 56 8 32 32 8Z"/>
+    <path d="M32 17v30"/>
+    <path d="M23 26c5-5.8 13-5.8 18 0"/>
+    <path d="M23 38c5 5.8 13 5.8 18 0"/>
+    <circle cx="32" cy="32" r="3.5" fill="#00A6D6" stroke="none"/>
+  </g>
+</svg>

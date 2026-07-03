@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI-Sports 2026 | IEEE BigData Workshop</title>
+    <meta
+      name="description"
+      content="The Sixth International Workshop on Artificial Intelligence in Sports, proposed for IEEE BigData 2026."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="AI-Sports 2026 home">
+        <span class="brand-logo-shell" aria-hidden="true">
+          <img class="brand-logo" src="assets/ieee-brand.svg" alt="" />
+        </span>
+        <span>
+          <strong>AI-Sports 2026</strong>
+          <small>IEEE BigData Workshop</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span aria-hidden="true"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#topics">Topics</a>
+        <a href="#dates">Dates</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#submission">Submission</a>
+        <a href="#organizers">Organizers</a>
+        <a href="#committee">Committee</a>
+        <a href="#history">History</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/hero-ai-sports.png"
+          alt="Athletes in motion surrounded by AI sports analytics and sensor data visualizations"
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <canvas class="hero-canvas" data-hero-canvas aria-hidden="true"></canvas>
+        <div class="hero-console" aria-label="Workshop focus signals">
+          <span>Multimodal streams</span>
+          <span>Edge-cloud AI</span>
+          <span>Trustworthy decisions</span>
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">2026 IEEE BigData Workshop</p>
+          <h1 id="hero-title">AI-Sports 2026</h1>
+          <p class="hero-subtitle">
+            The Sixth International Workshop on Artificial Intelligence in Sports
+          </p>
+          <p class="hero-copy">
+            A focused forum for large-scale sports data analytics, multimodal sensing,
+            foundation models, edge AI, and trustworthy decision support across sports
+            science and technology.
+          </p>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button primary" href="#topics">Explore Topics</a>
+            <a class="button secondary" href="#schedule">View Schedule</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Workshop highlights">
+        <div>
+          <strong>Nov. 7, 2026</strong>
+          <span>Submission deadline</span>
+        </div>
+        <div>
+          <strong>Nov 15, 2026</strong>
+          <span>Acceptance notification</span>
+        </div>
+        <div>
+          <strong>Nov 21, 2026</strong>
+          <span>Camera-ready deadline</span>
+        </div>
+        <div>
+          <strong>TBA</strong>
+          <span>Workshop date</span>
+        </div>
+        <div>
+          <strong>Phoenix, AZ, USA</strong>
+          <span>Sheraton Phoenix Downtown</span>
+        </div>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="section-kicker">Overview</div>
+        <div class="section-grid">
+          <div>
+            <h2>A data-centric forum for deployable sports intelligence</h2>
+          </div>
+          <div class="prose">
+            <p>
+              AI-Sports 2026 is proposed as a focused IEEE BigData workshop for research
+              that treats sports intelligence as an end-to-end data problem. The workshop
+              foregrounds the full lifecycle of sports data: acquisition from wearable,
+              video, physiological, motion-capture, competition, and contextual sources;
+              scalable data management; multimodal modeling; real-time inference; and
+              accountable decision support for high-impact practice settings.
+            </p>
+            <p>
+              The workshop builds on five AI-Sports editions at IEEE ICME and complementary
+              experience from IT4PSS at IJCAI. Its IEEE BigData positioning broadens the
+              community beyond media analysis toward large-scale analytics, heterogeneous
+              sensor integration, reproducible benchmarks, edge-cloud systems, foundation
+              models, trustworthy AI, and deployment-ready sports science applications.
+            </p>
+          </div>
+        </div>
+
+        <div class="value-grid" aria-label="Big Data dimensions">
+          <div><span>Volume</span><p>Large video, sensor, and event archives</p></div>
+          <div><span>Velocity</span><p>Real-time athlete monitoring and inference</p></div>
+          <div><span>Variety</span><p>Video, IMU, EMG, PPG, GPS, RFID, logs, and context</p></div>
+          <div><span>Veracity</span><p>Noisy, missing, drifting, and domain-shifted signals</p></div>
+          <div><span>Value</span><p>Actionable guidance for coaches, athletes, and clinicians</p></div>
+        </div>
+      </section>
+
+      <section id="contributions" class="section section-alt">
+        <div class="section-kicker">Call For Contributions</div>
+        <div class="section-grid">
+          <div>
+            <h2>Original work, benchmarks, datasets, systems, and position papers</h2>
+          </div>
+          <div class="prose">
+            <p>
+              We invite research papers, position papers, benchmark papers, dataset papers,
+              and system demonstrations. Submissions should emphasize data scale, multimodal
+              integration, methodological novelty, reproducible evaluation, and practical
+              relevance to sports science and sports technology.
+            </p>
+            <p>
+              Work addressing large-scale analytics, AI-driven data intelligence, IoT and
+              edge data processing, trustworthy modeling, and deployable decision-support
+              systems for real-world sports environments is especially welcome.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="topics" class="section">
+        <div class="section-kicker">Topic Areas</div>
+        <div class="heading-row">
+          <h2>Eight entry points into sports data intelligence</h2>
+          <p>
+            The scope connects sports applications with IEEE BigData themes in analytics,
+            systems, AI, reproducibility, and real-world deployment.
+          </p>
+        </div>
+
+        <div id="topic-spotlight" class="topic-stage" aria-live="polite">
+          <div class="topic-orb" aria-hidden="true">
+            <span data-topic-letter>A</span>
+          </div>
+          <div>
+            <p class="topic-label" data-topic-label>Focus Area A</p>
+            <h3 data-topic-title>Large-Scale Multimodal Sports Data Analytics</h3>
+            <p data-topic-copy>
+              Collection, management, integration, fusion, temporal modeling, data quality,
+              domain adaptation, and scalable sports data pipelines.
+            </p>
+            <div class="topic-tags" data-topic-tags>
+              <span>Fusion</span>
+              <span>Temporal modeling</span>
+              <span>Pipelines</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="topic-grid">
+          <article class="topic-card" tabindex="0" aria-controls="topic-spotlight" data-topic="A" data-tags="Fusion,Temporal modeling,Pipelines">
+            <span>A</span>
+            <h3>Large-Scale Multimodal Sports Data Analytics</h3>
+            <p>
+              Collection, management, integration, fusion, temporal modeling, data quality,
+              domain adaptation, and scalable sports data pipelines.
+            </p>
+          </article>
+          <article class="topic-card" tabindex="0" aria-controls="topic-spotlight" data-topic="B" data-tags="Tracking,Pose,Events">
+            <span>B</span>
+            <h3>Sports Video, Vision, and Spatiotemporal Understanding</h3>
+            <p>
+              Detection, tracking, pose estimation, action recognition, event detection,
+              tactical analysis, motion forecasting, and long-horizon modeling.
+            </p>
+          </article>
+          <article class="topic-card" tabindex="0" aria-controls="topic-spotlight" data-topic="C" data-tags="LLMs,Agents,RAG">
+            <span>C</span>
+            <h3>Foundation Models, LLMs, and Agentic AI</h3>
+            <p>
+              Vision-language models, sports-aware foundation models, retrieval-augmented
+              coaching, report generation, and human-in-the-loop workflows.
+            </p>
+          </article>
+          <article class="topic-card" tabindex="0" aria-controls="topic-spotlight" data-topic="D" data-tags="IoT,Latency,Deployment">
+            <span>D</span>
+            <h3>Big Data Systems, Edge AI, IoT, and Real-Time Computing</h3>
+            <p>
+              Wearable streams, edge-cloud coordination, latency-aware analytics, secure
+              data transmission, and deployment constraints.
+            </p>
+          </article>
+          <article class="topic-card" tabindex="0" aria-controls="topic-spotlight" data-topic="E" data-tags="Robustness,Fairness,Benchmarks">
+            <span>E</span>
+            <h3>Trustworthy, Responsible, and Reproducible Sports AI</h3>
+            <p>
+              Calibration, robustness, privacy-preserving learning, fairness, transparent
+              reporting, explainability, audit trails, and reproducible benchmarks.
+            </p>
+          </article>
+          <article class="topic-card" tabindex="0" aria-controls="topic-spotlight" data-topic="F" data-tags="Digital twins,Biomechanics,Simulation">
+            <span>F</span>
+            <h3>Simulation, Digital Twins, and Biomechanics-Aware Analytics</h3>
+            <p>
+              Athlete, team, and environment digital twins; physics-aware learning;
+              synthetic data; motion reconstruction; and what-if analysis.
+            </p>
+          </article>
+          <article class="topic-card" tabindex="0" aria-controls="topic-spotlight" data-topic="G" data-tags="Coaching,Rehabilitation,Dashboards">
+            <span>G</span>
+            <h3>Sports Applications and Human-Centered Systems</h3>
+            <p>
+              Performance analysis, training planning, rehabilitation assessment,
+              return-to-play support, AR/VR feedback, and adaptive dashboards.
+            </p>
+          </article>
+          <article class="topic-card" tabindex="0" aria-controls="topic-spotlight" data-topic="H" data-tags="Explanations,Attribution,Trust">
+            <span>H</span>
+            <h3>Explainable AI and Interpretable Sports Analytics</h3>
+            <p>
+              Feature attribution, visual explanations, counterfactual coaching guidance,
+              interpretable multimodal fusion, and user-centered explanation interfaces.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="dates" class="section section-dark">
+        <div class="section-kicker">Important Dates</div>
+        <div class="heading-row">
+          <h2>Tentative 2026 timeline</h2>
+          <p>
+            IEEE BigData 2026 will take place Dec. 14-17, 2026 at Sheraton Phoenix
+            Downtown in Phoenix, Arizona, USA. The exact workshop date will be announced
+            after final IEEE BigData scheduling.
+          </p>
+        </div>
+
+        <div class="deadline-panel">
+          <div>
+            <span>Submission countdown</span>
+            <strong><b data-countdown-days>--</b> days</strong>
+            <small data-countdown-status>Submission deadline: Nov. 7, 2026</small>
+          </div>
+          <div class="deadline-meter" aria-hidden="true">
+            <i data-deadline-progress></i>
+          </div>
+        </div>
+
+        <div class="timeline" aria-label="Important dates">
+          <div class="timeline-item">
+            <time datetime="2026-11-07">Nov. 7, 2026</time>
+            <strong>Submission deadline</strong>
+          </div>
+          <div class="timeline-item">
+            <time datetime="2026-11-15">Nov 15, 2026</time>
+            <strong>Notification of acceptance</strong>
+          </div>
+          <div class="timeline-item">
+            <time datetime="2026-11-21">Nov 21, 2026</time>
+            <strong>Camera-ready deadline</strong>
+          </div>
+          <div class="timeline-item">
+            <time>TBA</time>
+            <strong>Workshop date</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="section">
+        <div class="section-kicker">Program</div>
+        <div class="heading-row">
+          <h2>Preliminary one-day format</h2>
+          <p>
+            The program combines invited keynotes, oral papers, poster and demo exchange,
+            and a cross-venue panel with academic and industrial perspectives.
+          </p>
+        </div>
+
+        <div class="schedule-focus" aria-live="polite">
+          <time data-schedule-time>09:00-09:10</time>
+          <strong data-schedule-title>Opening and overview</strong>
+          <span data-schedule-note>Community framing for sports data intelligence at IEEE BigData.</span>
+        </div>
+
+        <div class="schedule-table" role="table" aria-label="Proposed workshop schedule">
+          <div role="row" tabindex="0" data-note="Community framing for sports data intelligence at IEEE BigData.">
+            <time role="cell">09:00-09:10</time>
+            <span role="cell">Opening and overview</span>
+          </div>
+          <div role="row" tabindex="0" data-note="Invited perspective on foundation models, tool-using agents, and sports workflows.">
+            <time role="cell">09:10-10:00</time>
+            <span role="cell">Invited Keynote 1: Foundation models and agents in sports</span>
+          </div>
+          <div role="row" tabindex="0" data-note="Informal exchange and speaker discussion.">
+            <time role="cell">10:00-10:20</time>
+            <span role="cell">Coffee break</span>
+          </div>
+          <div role="row" tabindex="0" data-note="Oral presentations focused on methods, data, evaluation, and systems.">
+            <time role="cell">10:20-12:00</time>
+            <span role="cell">Paper Session A: oral presentations, 15-18 minutes each</span>
+          </div>
+          <div role="row" tabindex="0" data-note="Lunch break.">
+            <time role="cell">12:00-13:30</time>
+            <span role="cell">Lunch</span>
+          </div>
+          <div role="row" tabindex="0" data-note="Invited perspective on sensing platforms, IoT, and deployable sports AI.">
+            <time role="cell">13:30-14:20</time>
+            <span role="cell">Invited Keynote 2: IoT-based sports AI</span>
+          </div>
+          <div role="row" tabindex="0" data-note="Second oral session for analytics, applications, and reproducibility.">
+            <time role="cell">14:20-15:20</time>
+            <span role="cell">Paper Session B</span>
+          </div>
+          <div role="row" tabindex="0" data-note="Hands-on exchange around datasets, benchmarks, AI tools, and live systems.">
+            <time role="cell">15:20-16:10</time>
+            <span role="cell">Poster and demo session: tools, datasets, benchmarks, live systems</span>
+          </div>
+          <div role="row" tabindex="0" data-note="Cross-venue discussion linking perception, systems, and agentic sports AI.">
+            <time role="cell">16:10-17:00</time>
+            <span role="cell">Panel: From Perception to Agentic Sports AI</span>
+          </div>
+          <div role="row" tabindex="0" data-note="Roadmap for the AI-Sports community at IEEE BigData.">
+            <time role="cell">17:00-17:10</time>
+            <span role="cell">Closing remarks and community roadmap</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="submission" class="section">
+        <div class="section-kicker">Submission</div>
+        <div class="heading-row">
+          <h2>Submit through the official conference system</h2>
+          <p>
+            All workshop papers must be submitted through the official submission system
+            provided by the conference. Submissions sent directly to the workshop organizers
+            will not be considered.
+          </p>
+        </div>
+
+        <div class="submission-panel">
+          <div>
+            <span>Submission Link</span>
+            <strong>IEEE BigData 2026 CyberChair</strong>
+          </div>
+          <a
+            class="button primary"
+            href="https://wi-lab.com/cyberchair/2026/bigdata26/scripts/submit.php?subarea=S24&amp;undisplay_detail=1&amp;wh=/cyberchair/2026/bigdata26/scripts/ws_submit.php"
+            target="_blank"
+            rel="noopener"
+          >
+            Open Submission System
+          </a>
+          <a
+            class="submission-url"
+            href="https://wi-lab.com/cyberchair/2026/bigdata26/scripts/submit.php?subarea=S24&amp;undisplay_detail=1&amp;wh=/cyberchair/2026/bigdata26/scripts/ws_submit.php"
+            target="_blank"
+            rel="noopener"
+          >
+            https://wi-lab.com/cyberchair/2026/bigdata26/scripts/submit.php?subarea=S24&amp;undisplay_detail=1&amp;wh=/cyberchair/2026/bigdata26/scripts/ws_submit.php
+          </a>
+        </div>
+      </section>
+
+      <section id="organizers" class="section section-alt">
+        <div class="section-kicker">Organizing Committee</div>
+        <div class="heading-row">
+          <h2>International organizing team</h2>
+          <p>
+            The team brings together AI-Sports, multimedia, sensing, machine
+            learning, IoT, and sports science experience across Taiwan, the United States,
+            Japan, and Germany.
+          </p>
+        </div>
+
+        <div class="people-grid">
+          <article class="person-card lead">
+            <a class="person-photo" href="https://oz.nthu.edu.tw/~d917904/" aria-label="Huang-Chia Shih homepage">
+              <img src="assets/organizers/huang-chia-shih.jpg" alt="Huang-Chia Shih" />
+            </a>
+            <h3>Huang-Chia Shih</h3>
+            <p>National Central University, Taiwan</p>
+            <a href="mailto:shih@ncu.edu.tw">shih@ncu.edu.tw</a>
+            <a href="https://oz.nthu.edu.tw/~d917904/">Homepage</a>
+          </article>
+          <article class="person-card">
+            <a class="person-photo" href="https://people.cs.nycu.edu.tw/~yi/" aria-label="Tsì-Uí İk homepage">
+              <img src="assets/organizers/tsi-ui-ik.jpg" alt="Tsì-Uí İk" />
+            </a>
+            <h3>Tsì-Uí İk</h3>
+            <p>National Yang Ming Chiao Tung University, Taiwan</p>
+            <a href="mailto:tik@nycu.edu.tw">tik@nycu.edu.tw</a>
+            <a href="https://people.cs.nycu.edu.tw/~yi/">Homepage</a>
+          </article>
+          <article class="person-card">
+            <a class="person-photo" href="https://wasn.csie.ncu.edu.tw/advisor" aria-label="Min-Te Sun homepage">
+              <img src="assets/organizers/min-te-sun.jpg" alt="Min-Te Sun" />
+            </a>
+            <h3>Min-Te Sun</h3>
+            <p>National Central University, Taiwan</p>
+            <a href="mailto:msun@csie.ncu.edu.tw">msun@csie.ncu.edu.tw</a>
+            <a href="https://wasn.csie.ncu.edu.tw/advisor">Homepage</a>
+          </article>
+          <article class="person-card">
+            <a class="person-photo" href="https://www.eng.auburn.edu/~weishinn/" aria-label="Wei-Shinn Ku homepage">
+              <img src="assets/organizers/wei-shinn-ku.jpg" alt="Wei-Shinn Ku" />
+            </a>
+            <h3>Wei-Shinn Ku</h3>
+            <p>Auburn University, USA</p>
+            <a href="mailto:weishinn@auburn.edu">weishinn@auburn.edu</a>
+            <a href="https://www.eng.auburn.edu/~weishinn/">Homepage</a>
+          </article>
+          <article class="person-card">
+            <a class="person-photo" href="https://kazuyasakai.fpark.tmu.ac.jp/" aria-label="Kazuya Sakai homepage">
+              <img src="assets/organizers/kazuya-sakai.jpg" alt="Kazuya Sakai" />
+            </a>
+            <h3>Kazuya Sakai</h3>
+            <p>Tokyo Metropolitan University, Japan</p>
+            <a href="mailto:ksakai@tmu.ac.jp">ksakai@tmu.ac.jp</a>
+            <a href="https://kazuyasakai.fpark.tmu.ac.jp/">Homepage</a>
+          </article>
+          <article class="person-card">
+            <a class="person-photo" href="https://www-lmd.ist.hokudai.ac.jp/member/takahiro-ogawa/" aria-label="Takahiro Ogawa homepage">
+              <img src="assets/organizers/takahiro-ogawa.jpg" alt="Takahiro Ogawa" />
+            </a>
+            <h3>Takahiro Ogawa</h3>
+            <p>Hokkaido University, Japan</p>
+            <a href="mailto:ogawa@lmd.ist.hokudai.ac.jp">ogawa@lmd.ist.hokudai.ac.jp</a>
+            <a href="https://www-lmd.ist.hokudai.ac.jp/member/takahiro-ogawa/">Homepage</a>
+          </article>
+          <article class="person-card">
+            <a class="person-photo" href="https://people.ece.uw.edu/hwang/" aria-label="Jenq-Neng Hwang homepage">
+              <img src="assets/organizers/jenq-neng-hwang.jpg" alt="Jenq-Neng Hwang" />
+            </a>
+            <h3>Jenq-Neng Hwang</h3>
+            <p>University of Washington, USA</p>
+            <a href="mailto:hwang@uw.edu">hwang@uw.edu</a>
+            <a href="https://people.ece.uw.edu/hwang/">Homepage</a>
+          </article>
+          <article class="person-card">
+            <a class="person-photo" href="https://www.uni-augsburg.de/en/fakultaet/fai/informatik/prof/mmc/team/lienhart_eng/" aria-label="Rainer Lienhart homepage">
+              <img src="assets/organizers/rainer-lienhart.jpg" alt="Rainer Lienhart" />
+            </a>
+            <h3>Rainer Lienhart</h3>
+            <p>University of Augsburg, Germany</p>
+            <a href="mailto:rainer.lienhart@uni-a.de">rainer.lienhart@uni-a.de</a>
+            <a
+              href="https://www.uni-augsburg.de/en/fakultaet/fai/informatik/prof/mmc/team/lienhart_eng/"
+            >Homepage</a>
+          </article>
+        </div>
+
+        <div class="bio-panel">
+          <details>
+            <summary>Organizer profile highlights</summary>
+            <div class="bio-list">
+              <p>
+                <strong>Huang-Chia Shih</strong> works on multimedia content analysis,
+                human-computer interaction, pattern recognition, medical image processing,
+                and sports big data analytics. He is the lead workshop organizer.
+              </p>
+              <p>
+                <strong>Tsì-Uí İk</strong> focuses on intelligent sports learning,
+                intelligent transportation systems, mobile sensing, machine learning, deep
+                learning, and wireless sensor networks.
+              </p>
+              <p>
+                <strong>Min-Te Sun</strong> researches deep learning, network security, and
+                distributed computing, and serves as chair of CSIE at National Central
+                University.
+              </p>
+              <p>
+                <strong>Wei-Shinn Ku</strong> leads work in data management systems, data
+                science, cybersecurity, and mobile computing as an endowed professor at
+                Auburn University.
+              </p>
+              <p>
+                <strong>Takahiro Ogawa</strong> researches AI, IoT, and big data analysis for
+                multimedia signal processing and applications.
+              </p>
+              <p>
+                <strong>Jenq-Neng Hwang</strong> is a fellow of IEEE and a long-standing
+                contributor to multimedia signal processing, computer vision, AI, and
+                industry-connected machine learning.
+              </p>
+              <p>
+                <strong>Rainer Lienhart</strong> leads the Machine Learning and Computer
+                Vision Lab at the University of Augsburg, with expertise in large-scale
+                video, human pose, sensor, and data mining algorithms.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section id="committee" class="section">
+        <div class="section-kicker">Program Committee</div>
+        <div class="heading-row">
+          <h2>Tentative PC members</h2>
+          <p></p>
+        </div>
+
+        <div class="committee-list">
+          <span>Ming-Ching Chang, University at Albany, SUNY, USA</span>
+          <span>Jenq-Neng Hwang, University of Washington, USA</span>
+          <span>Chang-Tien Lu, Virginia Tech, USA</span>
+          <span>Wen-Chih Peng, National Yang Ming Chiao Tung University, Taiwan</span>
+          <span>Kazuya Sakai, Tokyo Metropolitan University, Japan</span>
+          <span>Huang-Chia Shih, National Central University, Taiwan</span>
+          <span>Tomotaka Wada, Kansai University, Japan</span>
+          <span>Jiunn-Lin Wu, National Chung Hsing University, Taiwan</span>
+          <span>Yu-Hsuan Kuo, Amazon, USA</span>
+          <span>Rainer Lienhart, University of Augsburg, Germany</span>
+          <span>Thomas B. Moeslund, Aalborg University, Denmark</span>
+          <span>Hideo Saito, Keio University, Japan</span>
+          <span>Anthony Cioppa, University of Liège, Belgium</span>
+          <span>Michele Merler, IBM Research, USA</span>
+          <span>Jim Little, University of British Columbia, Canada</span>
+          <span>Sho Takahashi, Hokkaido University, Japan</span>
+          <span>Shin'ichi Satoh, National Institute of Informatics, Japan</span>
+          <span>Chih-Chang Yu, Chung Yuan Christian University, Taiwan</span>
+          <span>Tiziana D'Orazio, National Research Council of Italy, Italy</span>
+          <span>Hsu-Yung Cheng, National Central University, Taiwan</span>
+          <span>Tzyy-Yuang Shian, National Taiwan Normal University, Taiwan</span>
+          <span>Sheng K Wu, National Taiwan University of Sport, Taiwan</span>
+        </div>
+      </section>
+
+      <section id="history" class="section section-dark">
+        <div class="section-kicker">History and Positioning</div>
+        <div class="heading-row">
+          <h2>A bridge between sports AI communities and IEEE BigData</h2>
+          <p>
+            AI-Sports 2026 extends existing sports AI, computer vision, multimedia, and
+            precision sports science communities toward large-scale, heterogeneous,
+            real-time, and trustworthy sports data intelligence.
+          </p>
+        </div>
+
+        <div class="history-grid">
+          <article>
+            <h3>AI-Sports at IEEE ICME</h3>
+            <p>
+              The AI-Sports workshop series ran across five ICME editions, forming a
+              community around sports analysis, multimedia understanding, sensing
+              technologies, and intelligent sports applications.
+            </p>
+            <div class="link-row">
+              <a href="https://ai-sports.github.io/">2024</a>
+              <a href="https://ai-sports23.github.io/">2023</a>
+              <a href="https://ai-sports22.github.io/">2022</a>
+              <a href="https://oz.nthu.edu.tw/~d917904/AI-Sports21.html">2021</a>
+            </div>
+          </article>
+          <article>
+            <h3>IT4PSS at IJCAI</h3>
+            <p>
+              IT4PSS cultivated an IJCAI-side audience for intelligent technologies in
+              precision sports science and complements AI-Sports' broader history.
+            </p>
+            <div class="link-row">
+              <a href="https://wasn.csie.ncu.edu.tw/workshop/IT4PSS.html">2023</a>
+              <a href="https://ijcai24.org/workshops/index.html">2024</a>
+            </div>
+          </article>
+          <article>
+            <h3>CVsports and MMSports</h3>
+            <p>
+              CVsports and MMSports show sustained interest in sports vision and multimodal
+              sports content. The IEEE BigData workshop complements them through systems,
+              scalable analytics, IoT, reproducibility, and data-driven deployment.
+            </p>
+            <div class="link-row">
+              <a href="https://vap.aau.dk/cvsports/">CVsports</a>
+              <a href="https://mmsports.multimedia-computing.de/">MMSports</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        AI-Sports 2026: The Sixth International Workshop on Artificial Intelligence in
+        Sports.
+      </p>
+      <a href="#home">Back to top</a>
+    </footer>
+  </body>
+</html>
