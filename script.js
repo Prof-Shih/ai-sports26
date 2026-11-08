@@ -202,7 +202,7 @@ function setupCountdown() {
   if (!daysNode || !statusNode || !progressNode) return;
 
   const start = new Date("2026-06-12T00:00:00+08:00");
-  const deadline = new Date("2026-11-07T23:59:59+08:00");
+  const deadline = new Date("2026-11-11T23:59:59+08:00");
 
   function update() {
     const now = new Date();
@@ -213,7 +213,7 @@ function setupCountdown() {
     const progress = Math.max(0, Math.min(100, (elapsed / total) * 100));
 
     daysNode.textContent = String(days);
-    statusNode.textContent = remaining > 0 ? "Submission deadline: Nov. 7, 2026" : "Submission deadline has passed";
+    statusNode.textContent = remaining > 0 ? "Submission deadline: Nov. 11, 2026" : "Submission deadline has passed";
     progressNode.style.setProperty("--deadline-progress", `${progress.toFixed(1)}%`);
   }
 

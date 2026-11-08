@@ -1311,3 +1311,11 @@ h3 {
     margin-top: 16px;
   }
 }
+
+/* 延期：舊日期劃掉、新日期接在後面 */
+.old-date {
+  margin-right: 0.35em;
+  font-weight: 500;
+  opacity: 0.55;
+  text-decoration-thickness: 2px;
+}
