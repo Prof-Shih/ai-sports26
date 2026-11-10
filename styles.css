@@ -1319,3 +1319,12 @@ del {
   font-weight: 400;
   text-decoration-thickness: 2px;
 }
+
+.new-date {
+  color: #d32f2f !important;
+  font-weight: 700;
+}
+
+.timeline .new-date {
+  color: #ff5c5c !important;
+}
