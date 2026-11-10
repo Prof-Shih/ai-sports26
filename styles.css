@@ -1322,7 +1322,9 @@ del {
 
 .new-date {
   color: #d32f2f !important;
-  font-weight: 700;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  font-weight: inherit !important;
 }
 
 .timeline .new-date {
