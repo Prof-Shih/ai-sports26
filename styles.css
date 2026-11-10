@@ -1326,5 +1326,7 @@ del {
 }
 
 .timeline .new-date {
+  display: block;
+  margin-top: 0.2em;
   color: #ff5c5c !important;
 }
